@@ -40,7 +40,7 @@ function Cert() {
             <li>Git/GitHub</li>
             <li>Predictive Modeling</li>
             <li>Data Analysis</li>
-            <li> Collaboratiqn </li>
+            <li> Collaboratiqn</li>
                  
                   </ul>
                 
