@@ -18,11 +18,11 @@ function Exp() {
                   padding: "1rem",
                 }}
               >
-               In 2024
+                2024
               </h2>
               <h2>IBM Coursera</h2>
               <p>
-                I  completed a certificate in{" "}
+                I graduated with a certificate in{" "}
                 <span style={{ color: "var(--accent)", fontWeight: "bold" }}>
                   Frontend Development / Backend Developer 
                 </span>{" "}

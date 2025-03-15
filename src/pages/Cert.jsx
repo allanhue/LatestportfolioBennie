@@ -8,7 +8,7 @@ function Cert() {
       
       <div className="intro-section card">
         <p className="text-lg mb-4">
-          Enthusiastic Frontend and Backend Developer with a solid background in web development.
+          Enthusiastic Frontend and Backend Developer with a solid background in web development. <br/>
           Aspiring Machine Learning Engineer with a focus on healthcare and aviation sectors.
         </p>
       </div>
