@@ -8,13 +8,13 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
+# dist (removed to allow dist folder to be included for Netlify deployment)
 dist-ssr
 *.local
 
 # Editor directories and files
 .vscode/*
-!.vscode/extensions.json
+!.vscode/extensions.json  
 .idea
 .DS_Store
 *.suo
