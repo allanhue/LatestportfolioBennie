@@ -16,7 +16,7 @@ function Footer() {
             <a href="mailto:contact@example.com" className="hover:text-gray-600 transition-colors duration-300"> 
               <FaEnvelope size={30} className="hover:scale-110 transition-transform duration-300" /> 
             </a>
-            <p>© 2024 Allan Mwangi.</p>
+            <p>© 2023 Allan Mwangi.</p>
           </div>
         </div>
       </div>

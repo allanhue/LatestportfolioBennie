@@ -9,7 +9,7 @@ function About() {
       <ThemeToggle />
       <section className="about-section">
         <h4>Hi, I'm <h1>Allan Mwangi</h1></h4>
-        <h3>Frontend/Backend Python Developer</h3>
+        <h3>Software Developer</h3>
         <img 
           src={photo} 
           alt="Allan Mwangi" 

@@ -10,14 +10,16 @@ const Exp = lazy(() => import("./pages/Exp"));
 const About = lazy(() => import("./pages/About"));
 const Experience = lazy(() => import("./pages/Experience"));
 
+import { Spinner } from "./css/Components/spinner";
+
 function App() {
   return (
     <Router>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback = {<Spinner />}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} /> {/* About route */}
+            <Route path="/about" element={<About />} /> 
             <Route path="/experience" element={<Exp />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/certifications" element={<Cert />} />

@@ -27,9 +27,17 @@ function ContactForm() {
       }),
     });
 
-    if (!response.ok) {
+    if (!response.ok) 
+      // send error message 
+  
+    {
       console.error('Failed to send email');
     }
+  //   //set error message 
+  //  setError(err){
+  //   e
+  //  }
+
   };
   const handleSubmit = (e) => {
     e.preventDefault();

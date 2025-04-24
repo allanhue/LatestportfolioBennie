@@ -28,7 +28,7 @@ function Home() {
           <h1>Hi, I'm Allan</h1>
           <h2>Software Developer & Zoho Developer at Redian Softwares</h2>
           <p>
-            Specializing in creating dynamic web solutions and Zoho implementations.
+            Specializing in creating dynamic software solutions and Zoho implementations.
             Passionate about developing impactful software solutions.
           </p>
           <div className="stats-grid">

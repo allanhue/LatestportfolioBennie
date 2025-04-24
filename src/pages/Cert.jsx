@@ -1,14 +1,12 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 function Cert() {
   return (
     <div className="container">
-      <h2 className="section-title">Certifications & Skills</h2>
       
       <div className="intro-section card">
         <p className="text-lg mb-4">
-          Enthusiastic Frontend and Backend Developer with a solid background in web development. <br/>
+          Enthusiastic Frontend and Backend Developer with a solid background in software  development. <br/>
           Aspiring Machine Learning Engineer with a focus on healthcare and aviation sectors.
         </p>
       </div>
@@ -29,7 +27,7 @@ function Cert() {
             <li>React</li>
             <li>Node.js</li>
             <li>Express</li>
-            <li>Zoho</li>
+            <li>Zoho Suite ERP</li>
           </ul>
         </div>
 

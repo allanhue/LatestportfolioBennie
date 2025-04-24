@@ -4,9 +4,7 @@ import "../css/style.css";
 function Exp() {
   return (
     <div className="container">
-      <h1 style={{ display: "flex", justifyContent: "center" }}>
-        My Education
-      </h1>
+  
       <div className="container">
         <div>
           <div style={{ display: "flex", gap: "1rem" }}>
