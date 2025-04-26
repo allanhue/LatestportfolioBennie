@@ -28,7 +28,7 @@ function Nav() {
         
           <li>
             <Link to="/experience" className="nav-link" onClick={() => setOpen(false)}>
-              Education
+              Experience
             </Link>
           </li>
           <li>
@@ -39,6 +39,12 @@ function Nav() {
           <li>
             <Link to="/certifications" className="nav-link" onClick={() => setOpen(false)}>
               Certifications
+            </Link>
+          </li>
+
+            <li>
+            <Link to="/education" className="nav-link" onClick={() => setOpen(false)}>
+              Education
             </Link>
           </li>
         </div>

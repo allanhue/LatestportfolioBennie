@@ -6,7 +6,6 @@ function Cert() {
       
       <div className="intro-section card">
         <p className="text-lg mb-4">
-          Enthusiastic Frontend and Backend Developer with a solid background in software  development. <br/>
           Aspiring Machine Learning Engineer with a focus on healthcare and aviation sectors.
         </p>
       </div>
@@ -17,6 +16,7 @@ function Cert() {
           <ul>
             <li>Python</li>
             <li>JavaScript</li>
+            {/* <li>Java intermediate</li> */}
             <li>SQL (Postgres)</li>
           </ul>
         </div>
@@ -25,6 +25,7 @@ function Cert() {
           <h3>Frameworks & Tools</h3>
           <ul>
             <li>React</li>
+            <li>Tailwind Css</li>
             <li>Node.js</li>
             <li>Express</li>
             <li>Zoho Suite ERP</li>
@@ -36,7 +37,6 @@ function Cert() {
           <ul>
             <li>Cloud Computing</li>
             <li>Git/GitHub</li>
-            <li>Predictive Modeling</li>
             <li>Data Analysis</li>
             <li> Collaboratiqn </li>
                  

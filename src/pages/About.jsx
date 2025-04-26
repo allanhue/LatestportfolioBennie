@@ -9,7 +9,7 @@ function About() {
       <ThemeToggle />
       <section className="about-section">
         <h4>Hi, I'm <h1>Allan Mwangi</h1></h4>
-        <h3>Software Developer</h3>
+        
         <img 
           src={photo} 
           alt="Allan Mwangi" 
@@ -26,7 +26,7 @@ function About() {
         <h4><em>Who am I?</em></h4>
         <div className="about" id="about">
           <p>
-            Hi, I am Allan Kaigi Mwangi,  a passionate aspiring full stack software developer with a strong interest in technologies specifically software and data malnipulation. I am a certified frontend developer from IBM Coursera. I have a strong background in programming as I did Python and SQL from Kaggle, later on enrolled for my certificate at IBM where I specialized in some languages: JavaScript, HTML-5, React library, Node js .
+            Hi, I am Allan Mwangi, a passionate aspiring full stack software developer with a strong interest in technologies specifically software and data malnipulation. I am a certified frontend developer from IBM Coursera. I have a strong background in programming as I did Python and SQL from Kaggle, later on enrolled for my certificate at IBM where I specialized in some languages: JavaScript, HTML-5, React library, Node js .
             <br /><br />
             I did cloud computing and intro to cloud security which enhanced my frontend development. Having these skills made me able to learn about teamwork and keeping ahead with others on the latest technology in the market. My hands-on skills will surely be a great influence dealing with dynamic tasks on websites and app development also.
             <br /><br />
@@ -41,20 +41,23 @@ function About() {
             <h3>SKILLS</h3>
             <h2><b>Frontend / Backend skills</b></h2>
             <ul>
+               <li>Python</li>
               <li>JavaScript</li>
-              <li>React</li>
               <li>CSS</li>
-              <li>HTML</li>
-              <li>Tailwind CSS</li> <br/>
+              <li>HTML-5</li>
+              <li>Node js </li>
 
-
-
-              <li>Python</li>
-              <li>Node js</li>
-              <li>SQL/ Postgres</li>
+              <li>Database Management with SQL and Postgres</li>
               <li>Deployment Capabilities and Version Control</li>
             </ul>
             <p>
+             Practise version control for my  project enhacing better tracing of my code.
+              <br />
+              Portfolio website – A personal site that showcases my skills which supports every work I do.
+              <br />
+              E-commerce site – A small product-based e-commerce site with features like product lists, a shopping cart, and checkout making outstanding skills.
+              <br />
+              Having these skills equips me to understand user logins and working with APIs and credentials which are crucial.
               <br />
               <h4><b>* Check out my Github * - <a href="https://github.com/allanhue" style={{ color: 'rgb(247, 10, 10)' }}>ALLANHUE</a></b></h4>
             </p>
@@ -66,7 +69,7 @@ function About() {
           <ContactForm />
         </section>
         <section className="social-media">
-        
+          <h3>Connect with me</h3>
           <a href="https://www.linkedin.com/in/allan-mwangi-626902302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
             <i className="fa-brands fa-linkedin fa-3x"></i>
           </a>
