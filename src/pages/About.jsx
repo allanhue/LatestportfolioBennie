@@ -8,7 +8,7 @@ function About() {
     <div className="container">
       <ThemeToggle />
       <section className="about-section">
-        <h4>Hi, I'm <h1>Allan Mwangi</h1></h4>
+      
         
         <img 
           src={photo} 
