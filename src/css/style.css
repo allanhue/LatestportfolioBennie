@@ -30,7 +30,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 80px 2rem 0; /* Added top padding to account for fixed navbar */
 }
 
 .box {
@@ -155,7 +155,7 @@ p {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 4rem 0;
+  padding: 4rem 0 4rem; 
 }
 
 .content {
@@ -294,6 +294,11 @@ p {
   background-color: #52e0c4;
 }
 
+/* Add new styles for education section */
+.education-section {
+  padding-top: 2rem; /* Add specific padding for education section */
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .box {
@@ -313,11 +318,11 @@ p {
   .hero-section {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 2rem 0;
+    padding: 3rem 0 2rem; /* Adjusted from 4rem to 3rem for mobile */
   }
   
-  .content {
-    width: 100%;
+  .education-section {
+    padding-top: 1.5rem; /* Adjusted for mobile */
   }
 }
 

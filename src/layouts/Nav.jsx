@@ -1,24 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/nav.css";
 
 function Nav() {
   const [open, setOpen] = useState(false);
 
+  // Close menu when clicking outside
+  useEffect(() => {
+    const closeMenu = (e) => {
+      if (open && !e.target.closest('.nav-container')) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener('click', closeMenu);
+    return () => document.removeEventListener('click', closeMenu);
+  }, [open]);
+
   return (
     <nav className="nav-container">
       <ul className="nav-list">
-        {/* Left Side (Logo) */}
         <li>
           <Link to="/" className="nav-logo">
             Allan.
           </Link>
         </li>
-        {/* Hamburger for mobile */}
-        <li className="hamburger" onClick={() => setOpen(!open)}>
+        <li className="hamburger" onClick={(e) => {
+          e.stopPropagation();
+          setOpen(!open);
+        }}>
           <span>☰</span>
         </li>
-        {/* Right Side (Navigation Links) */}
         <div className={`nav-links ${open ? "open" : ""}`}>
           <li>
             <Link to="/about" className="nav-link" onClick={() => setOpen(false)}>
