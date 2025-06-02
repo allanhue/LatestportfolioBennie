@@ -25,7 +25,7 @@ function Home() {
     >
       <div className="hero-section">
         <div className="content">
-          <h1>Hi, </h1>
+          <h1> Hello World</h1>
           <h2>Software Developer & Zoho Developer at Redian Softwares</h2>
           <p>
             Specializing in creating dynamic software solutions and Zoho implementations.
