@@ -21,7 +21,7 @@ function Nav() {
       <ul className="nav-list">
         <li>
           <Link to="/" className="nav-logo">
-            Allan.
+            Home.
           </Link>
         </li>
         <li className="hamburger" onClick={(e) => {
