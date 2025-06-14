@@ -26,7 +26,7 @@ function About() {
         <h4><em>Who am I?</em></h4>
         <div className="about" id="about">
           <p>
-            Hi, I am Allan Mwangi, a passionate aspiring full stack software developer with a strong interest in technologies specifically software and data malnipulation. I am a certified frontend developer from IBM Coursera. I have a strong background in programming as I did Python and SQL from Kaggle, later on enrolled for my certificate at IBM where I specialized in some languages: JavaScript, HTML-5, React library, Node js .
+            Hi, I am Allan Mwangi, a  full stack software developer with a strong interest in technologies specifically software and data malnipulation. I am a certified software  developer from IBM Coursera. I have a strong background in programming as I did Python and SQL from Kaggle, later on enrolled for my certificate at IBM where I specialized in some languages: JavaScript, HTML-5, React library, Node js .
             <br /><br />
             I did cloud computing and intro to cloud security which enhanced my frontend development. Having these skills made me able to learn about teamwork and keeping ahead with others on the latest technology in the market. My hands-on skills will surely be a great influence dealing with dynamic tasks on websites and app development also.
             <br /><br />
