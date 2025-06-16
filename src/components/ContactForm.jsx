@@ -79,7 +79,11 @@ function ContactForm() {
           required 
         />
       </div>
-      <button type="submit" className="submit-button">Send</button>
+      <button type="button" className="submit-button" onClick={sendEmail}>Send</button> 
+      {/* redirect to gmail or outlook */}
+      <a href={`mailto:${formData.email}?subject=Contact Form Submission&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`)}`}>
+        <button type="button" className="submit-button">Send via Email</button>
+      </a>
     </form>
   );
 }

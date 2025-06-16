@@ -22,13 +22,15 @@ function Cert() {
         </div>
 
         <div className="card">
-          <h3>Frameworks & Tools</h3>
+          <h3>Frameworks & Libraries</h3>
           <ul>
             <li>React</li>
             <li>Tailwind Css</li>
             <li>Node.js</li>
             <li>Express</li>
+            <li>Zoho Catalyst</li>
             <li>Zoho Suite ERP</li>
+            <li>FastAPI</li>
           </ul>
         </div>
 
@@ -37,11 +39,9 @@ function Cert() {
           <ul>
             <li>Cloud Computing</li>
             <li>Git/GitHub</li>
-            <li>Data Analysis</li>
-            <li> Collaboratiqn </li>
-                 
-                  </ul>
-                
+            <li>Data Analysis & Visualization & Data cleaning</li>
+            <li>Collaboration and teamwork</li>
+          </ul>
         </div>
       </div>
     </div>

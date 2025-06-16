@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/nav.css";
+import { FaHome } from "react-icons/fa";
 
 function Nav() {
   const [open, setOpen] = useState(false);
@@ -21,7 +22,8 @@ function Nav() {
       <ul className="nav-list">
         <li>
           <Link to="/" className="nav-logo">
-            Allan.
+          {/* implement a home logo  from react-icons*/}
+              <FaHome size={35} />
           </Link>
         </li>
         <li className="hamburger" onClick={(e) => {

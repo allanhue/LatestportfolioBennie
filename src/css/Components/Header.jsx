@@ -12,11 +12,7 @@ function Header() {
           </h1>
         </Link>
 
-        <div className="hidden xl:flex items-center gap-8">
-          <Link to="/contact">
-            <Button text="Hire me" />
-          </Link>
-        </div>
+      
       </div>
     </header>
   );

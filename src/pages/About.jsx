@@ -43,9 +43,10 @@ function About() {
             <ul>
                <li>Python</li>
               <li>JavaScript</li>
-              <li>CSS</li>
-              <li>HTML-5</li>
-              <li>Node js </li>
+              <li>React</li>
+              <li>HTML-5 & CSS</li>
+              <li>Node js & Express</li>
+              <li>FastAPI Library</li>
 
               <li>Database Management with SQL and Postgres</li>
               <li>Deployment Capabilities and Version Control</li>
@@ -68,6 +69,7 @@ function About() {
           <h3>Contact Me</h3>
           <ContactForm />
         </section>
+       
         <section className="social-media">
           <h3>Connect with me</h3>
           <a href="https://www.linkedin.com/in/allan-mwangi-626902302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
