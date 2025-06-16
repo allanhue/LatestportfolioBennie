@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Layout from "./layouts/Layout";
+import { HashRouter } from "react-router-dom";
 
 // Lazy load pages
 const Home = lazy(() => import("./pages/Home"));
@@ -14,7 +15,7 @@ import { Spinner } from "./css/Components/spinner";
 
 function App() {
   return (
-    <Router>
+      <HashRouter>
       <Suspense fallback = {<Spinner />}>
         <Layout>
           <Routes>
@@ -27,7 +28,7 @@ function App() {
           </Routes>
         </Layout>
       </Suspense>
-    </Router>
+    </HashRouter>
   );
 }
 
