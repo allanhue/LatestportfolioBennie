@@ -13,11 +13,7 @@ function Projects() {
 
         </div>
       
-        <div>
-          <h2>Napier Internationals</h2>
-          <p>Made over successful 3 projects, one for a client on e-commerce Napier Internationals which took about 3 months, an end-to-end project using JavaScript to enhance and some Wix features since I had little experience thus improved my knowledge.</p>
-          <img src="../assets/napier.png" alt="Napier Internationals" style={{ width: "100%", borderRadius: "8px" }} />
-        </div>
+       
         <div>
           <h2>Pet Projects</h2>
           <p>Done some pet projects  on GitHub as study projects on plants making my portfolio showcasing all elements all round .</p>
