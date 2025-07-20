@@ -1,12 +1,10 @@
 import React from 'react'
 import photo from '../assets/passport allan.jpg'
 import ContactForm from '../components/ContactForm'
-import ThemeToggle from '../components/ThemeToggle'
 
 function About () {
   return (
     <div className='container'>
-      <ThemeToggle />
       <section className='about-section'>
         <img
           src={photo}

@@ -3,8 +3,11 @@
   position: fixed;
   top: 0;
   z-index: 1000;
-  background: #2e2e2e;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
 .nav-list {
@@ -20,7 +23,12 @@
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: #681ddf;
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+.nav-logo:hover {
+  color: var(--text-primary);
 }
 
 .nav-links {
@@ -31,14 +39,36 @@
 
 .nav-link {
   text-decoration: none;
-  color: #f0eaea;
+  color: var(--text-primary);
   font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+  background-color: var(--background);
 }
 
 .hamburger {
   display: none;
   cursor: pointer;
   font-size: 1.5rem;
+  color: var(--text-primary);
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover {
+  background-color: var(--background);
+  color: var(--accent);
+}
+
+.theme-toggle-nav {
+  margin-left: 1rem;
 }
 
 /* Responsive styles */
@@ -53,11 +83,18 @@
     top: 60px;
     left: 0;
     right: 0;
-    background: #211c1ce2;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
     flex-direction: column;
     align-items: center;
     padding: 2rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .theme-toggle-nav {
+    margin-left: 0;
+    margin-top: 1rem;
   }
 
   .nav-links.open {

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Layout from "./layouts/Layout";
 import { HashRouter } from "react-router-dom";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 // Lazy load pages
 const Home = lazy(() => import("./pages/Home"));
@@ -15,20 +16,22 @@ import { Spinner } from "./css/Components/spinner";
 
 function App() {
   return (
+    <ThemeProvider>
       <HashRouter>
-      <Suspense fallback = {<Spinner />}>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} /> 
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/certifications" element={<Cert />} />
-            <Route path="/education" element={<Exp />} />
-          </Routes>
-        </Layout>
-      </Suspense>
-    </HashRouter>
+        <Suspense fallback={<Spinner />}>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} /> 
+              <Route path="/experience" element={<Experience />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/certifications" element={<Cert />} />
+              <Route path="/education" element={<Exp />} />
+            </Routes>
+          </Layout>
+        </Suspense>
+      </HashRouter>
+    </ThemeProvider>
   );
 }
 

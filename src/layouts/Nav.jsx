@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/nav.css";
 import { FaHome } from "react-icons/fa";
+import ThemeToggle from "../components/ThemeToggle";
 
 function Nav() {
   const [open, setOpen] = useState(false);
@@ -59,6 +60,9 @@ function Nav() {
             <Link to="/education" className="nav-link" onClick={() => setOpen(false)}>
               Education
             </Link>
+          </li>
+          <li className="theme-toggle-nav">
+            <ThemeToggle />
           </li>
         </div>
       </ul>

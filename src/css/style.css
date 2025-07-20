@@ -280,18 +280,58 @@ p {
 }
 
 .theme-toggle {
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 4px;
-  background-color: var(--accent);
-  color: var(--background);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 25px;
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .theme-toggle:hover {
-  background-color: #52e0c4;
+  background-color: var(--accent);
+  color: var(--background);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(100, 255, 218, 0.3);
+}
+
+.toggle-icon {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover .toggle-icon {
+  transform: rotate(360deg);
+}
+
+.toggle-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .toggle-text {
+    display: none;
+  }
+  
+  .theme-toggle {
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+  }
 }
 
 /* Add new styles for education section */
