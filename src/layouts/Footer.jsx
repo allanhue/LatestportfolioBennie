@@ -14,10 +14,10 @@ function Footer() {
               <FaGithub size={34} style={{ padding: '10px' }} className="hover:scale-110 transition-transform duration-300" /> 
 
             </a> 
-            <a href="https://linkedin.com" className="hover:text-gray-600 transition-colors duration-300"> 
+            <a href="https://www.linkedin.com/in/allan-mwangi-626902302/" className="hover:text-gray-600 transition-colors duration-300"> 
               <FaLinkedin size={34} style={{ padding: '10px' }} className="hover:scale-110 transition-transform duration-300" /> 
             </a>
-            <a href="mailto:contact@example.com" className="hover:text-gray-600 transition-colors duration-300"> 
+            <a href="mailto:allanmwangi329@gmail.com" className="hover:text-gray-600 transition-colors duration-300"> 
               <FaEnvelope size={30} style={{ padding: '10px' }} className="hover:scale-110 transition-transform duration-300" /> 
             </a>
           </div>

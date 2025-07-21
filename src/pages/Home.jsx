@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/style.css";
 import { useSpring, animated } from "react-spring";
 import { motion } from "framer-motion";
 import photo from "../assets/passport allan.jpg";
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaDownload, FaCode, FaRocket, FaCertificate, FaGraduationCap } from "react-icons/fa";
+import { HiOutlineExternalLink } from "react-icons/hi";
+import { Link, useNavigate  } from "react-router-dom";
 
 function Num({ n }) {
   const props = useSpring({
@@ -16,54 +19,186 @@ function Num({ n }) {
 }
 
 function Home() {
+  const [hoveredStat, setHoveredStat] = useState(null);
+
+  const skills = ['Python', 'JavaScript', 'Node.js', 'React', 'Zoho', 'Postgres', 'Firebase', 'RestAPI'];
+  const recentProjects = [
+    { name: 'E-Commerce Platform', tech: 'React, Node.js', status: 'Completed' },
+    { name: 'CRM Integration', tech: 'Zoho, API', status: 'In Progress' },
+    { name: 'Data Analytics Dashboard', tech: 'Python, React', status: 'Planning' }
+  ];
+
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/projects');
+  };
+
   return (
     <motion.div 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="container"
+      className="home-container"
     >
-      <div className="hero-section">
-        <div className="content">
-          <h1>Hi, </h1>
-          <h2>Software Developer & Zoho Developer at Redian Softwares</h2>
-          <p>
-            Specializing in creating dynamic software solutions and Zoho implementations.
-            Passionate about developing impactful software solutions.
-          </p>
-          <div className="stats-grid">
-            <div>
-              <h2><Num n={1} /></h2>
-              <p>Experience</p>
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-background"></div>
+        <div className="hero-content">
+          <motion.div 
+            className="hero-text"
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+          >
+            <div className="greeting">
+              <span className="wave">👋</span>
+              <h1>Hi, I'm <span className="name-highlight">Allan Mwangi</span></h1>
             </div>
-            <div>
-              <h2><Num n={3} /></h2>
-              <p>Projects</p>
+            <h2 className="title">Software Developer & Zoho Specialist</h2>
+            <p className="bio">
+              Passionate about creating innovative software solutions and seamless Zoho integrations. 
+              Currently crafting digital experiences at <span className="company">Redian Softwares</span>.
+            </p>
+            
+            <div className="status-indicator">
+              <div className="status-dot"></div>
+              <span>Available for new opportunities</span>
             </div>
-            <div>
-              <h2><Num n={7} /></h2>
-              <p>Certifications</p>
+
+            <div className="cta-buttons">
+              <motion.button 
+                className="btn-primary"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              //add a link to projects 
+              onClick={() => navigate('/projects')}
+              >
+                <FaRocket /> View My Work
+              </motion.button>
+
+          
             </div>
-            <div>
-              <h2><Num n={4} /></h2>
-              <p>Languages</p>
+
+            <div className="social-links">
+              <a href="https://github.com/allanhue" aria-label="GitHub"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/allan-mwangi-626902302/" aria-label="LinkedIn"><FaLinkedin /></a>
+              <a href="https://mailto:allanmwangi329@gmail.com" aria-label="Email"><FaEnvelope /></a>
             </div>
-          </div>
+          </motion.div>
+
+          <motion.div 
+            className="hero-image"
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+          >
+            <div className="image-wrapper">
+              <img 
+                src={photo} 
+                alt="Allan Mwangi"
+                className="profile-image"
+              />
+              <div className="image-decoration"></div>
+            </div>
+          </motion.div>
         </div>
-        <div className="image-container">
-          <img 
-            src={photo} 
-            alt="Allan Mwangi"
-            style={{
-              width: "250px",
-              height: "250px",
-              objectFit: "cover",
-              borderRadius: "50%",
-              border: "4px solid var(--accent)"
-            }}
-          />
+      </section>
+
+      {/* Stats Section */}
+      <section className="stats-section">
+        <div className="stats-grid">
+          {[
+            { icon: FaGraduationCap, number: 1, label: 'Years Experience', color: '#3b82f6' },
+            { icon: FaCode, number: 3, label: 'Projects Completed', color: '#10b981' },
+            { icon: FaCertificate, number: 7, label: 'Certifications', color: '#f59e0b' },
+            { icon: FaRocket, number: 4, label: 'Technologies', color: '#ef4444' }
+          ].map((stat, index) => {
+            const Icon = stat.icon;
+            return (
+              <motion.div 
+                key={index}
+                className={`stat-card ${hoveredStat === index ? 'hovered' : ''}`}
+                onMouseEnter={() => setHoveredStat(index)}
+                onMouseLeave={() => setHoveredStat(null)}
+                whileHover={{ y: -5 }}
+                style={{ '--accent-color': stat.color }}
+              >
+                <div className="stat-icon">
+                  <Icon />
+                </div>
+                <div className="stat-number">
+                  <Num n={stat.number} />
+                </div>
+                <div className="stat-label">{stat.label}</div>
+              </motion.div>
+            );
+          })}
         </div>
-      </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="skills-section">
+        <h3>Core Technologies</h3>
+        <div className="skills-grid">
+          {skills.map((skill, index) => (
+            <motion.div 
+              key={skill}
+              className="skill-badge"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 * index }}
+              whileHover={{ scale: 1.1 }}
+            >
+              {skill}
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Recent Projects Preview */}
+      <section className="projects-preview">
+        <div className="section-header">
+          <h3>Recent Projects</h3>
+             <a href="Projects" className="view-all" onClick={() => navigate('/projects')}>
+            View All <HiOutlineExternalLink />
+          </a>
+        </div>
+        <div className="projects-grid">
+          {recentProjects.map((project, index) => (
+            <motion.div 
+              key={index}
+              className="project-card"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 * index }}
+              whileHover={{ y: -5 }}
+            >
+              <div className="project-header">
+                <h4>{project.name}</h4>
+                <span className={`status ${project.status.toLowerCase().replace(' ', '-')}`}>
+                  {project.status}
+                </span>
+              </div>
+              <p className="project-tech">{project.tech}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Quick Contact */}
+      <section className="quick-contact">
+        <div className="contact-card">
+          <h3>Let's Work Together</h3>
+          <p>Have a project in mind? Let's discuss how we can bring your ideas to life.</p>
+          <motion.a
+            href="mailto:allanmwangi329@gmail.com"
+            className="contact-btn"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}>
+            <FaEnvelope /> Email Me
+          </motion.a>
+        </div>
+      </section>
     </motion.div>
   );
 }
