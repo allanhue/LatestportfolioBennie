@@ -24,8 +24,8 @@ function Home() {
   const skills = ['Python', 'JavaScript', 'Node.js', 'React', 'Zoho', 'Postgres', 'Firebase', 'RestAPI'];
   const recentProjects = [
     { name: 'E-Commerce Platform', tech: 'React, Node.js', status: 'Completed' },
-    { name: 'CRM Integration', tech: 'Zoho, API', status: 'In Progress' },
-    { name: 'Data Analytics Dashboard', tech: 'Python, React', status: 'Planning' }
+    { name: 'Whatsapp Integration', tech: 'Zoho, API', status: 'In Progress' },
+    { name: 'Data Analytics Dashboard', tech: 'Python, Javascript', status: 'Planning' }
   ];
 
   const navigate = useNavigate();
