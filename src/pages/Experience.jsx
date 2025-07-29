@@ -39,18 +39,17 @@ const Experience = () => {
         <p className='text-accent'>Fiverr & Upwork | Aug 2024 - Present</p>
         <ul className='list-disc ml-4'>
           <li>
-            Built <strong>15+ web apps</strong> (React/Node.js) with 95% client
-            satisfaction, including an e-commerce platform with 40% faster load
-            times
+            Built <strong>3 web apps</strong> (React/Node.js) with 95% client
+            satisfaction, including an e-commerce platform with  faster peak loads
           </li>
           <li>
-            Increased code efficiency by 45% through{' '}
+              Increase code efficiency through{' '}
             <strong>AI-assisted optimization</strong> (GitHub Copilot, ChatGPT
             for debugging)
           </li>
           <li>
             Implemented <strong>responsive designs</strong> (Tailwind CSS) that
-            improved mobile conversion rates by 25%
+            improved mobile conversion and user experience
           </li>
           <li>
             Automated client workflows via{' '}

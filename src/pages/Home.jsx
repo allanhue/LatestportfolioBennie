@@ -52,7 +52,7 @@ function Home() {
           >
             <div className="greeting">
               <span className="wave"> 🧑‍💻</span>
-              <h1>Hi, I'm <span className="name-highlight">Allan Mwangi</span></h1>
+              <h1>Hi, I'm <span className="name-highlight">Allan</span></h1>
             </div>
             <h2 className="title">Software Developer & Zoho Specialist</h2>
             <p className="bio">
