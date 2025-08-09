@@ -83,7 +83,7 @@
     top: 60px;
     left: 0;
     right: 0;
-    background: var(--card-bg);
+    background: #0b1629e8;
     backdrop-filter: blur(10px);
     flex-direction: column;
     align-items: center;
