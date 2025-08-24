@@ -11,14 +11,14 @@ function Projects() {
       liveLink: "#",
       status: "Live"
     },
-    {
-      title: "On-Demand Cleaning Services App",
-      description: "A marketplace connecting users with local cleaning professionals. Features service selection wizard, user authentication, and booking system.",
-      technologies: ["React", "Firebase", "JavaScript", "CSS3"],
-      githubLink: "https://github.com/allanhue/data-vizualisation",
-      liveLink: "https://rianac.netlify.app/",
-      status: "In Development"
-    },
+    // {
+    //   title: "On-Demand Cleaning Services App",
+    //   description: "A marketplace connecting users with local cleaning professionals. Features service selection wizard, user authentication, and booking system.",
+    //   technologies: ["React", "Firebase", "JavaScript", "CSS3"],
+    //   githubLink: "https://github.com/allanhue/data-vizualisation",
+    //   liveLink: "https://rianac.netlify.app/",
+    //   status: "In Development"
+    // },
     {
       title: "Financial Fraud Detection",
       description: "Kaggle competition project using Python to identify money laundering patterns in 50k+ transaction records. Achieved 92% accuracy with Random Forest model.",

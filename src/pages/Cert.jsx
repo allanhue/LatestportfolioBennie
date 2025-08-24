@@ -5,8 +5,7 @@ function Cert () {
     <div className='container'>
       <div className='intro-section card'>
         <p className='text-lg mb-4'>
-          Data Scientist Researcher | Advancing AI in Healthcare, FinTech &
-          Aerospace Through Data Science & Predictive Analytics
+          Data Scientist Researcher | Advancing AI in Healthcare, FinTech 
         </p>
       </div>
 
@@ -24,7 +23,7 @@ function Cert () {
               <strong>SQL</strong> (PostgreSQL, Query Optimization)
             </li>
             <li>
-              <strong>Zoho Deluge</strong> (Low-Code Automation)
+              <strong>Zoho Deluge</strong> (Low-Code, Automation)
             </li>
           </ul>
         </div>

@@ -12,7 +12,7 @@ const Experience = () => {
         <ul className='list-disc ml-4'>
           <li>
             Design and deploy <strong>custom Zoho solutions</strong> using
-            Catalyst, reducing manual workflows by 30% for clients
+            Catalyst
           </li>
           <li>
             Integrate Zoho CRM/Creator with <strong>third-party APIs</strong>{' '}

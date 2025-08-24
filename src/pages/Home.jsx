@@ -23,9 +23,9 @@ function Home() {
 
   const skills = ['Python', 'JavaScript', 'Node.js', 'React', 'Zoho', 'Postgres', 'Firebase', 'RestAPI'];
   const recentProjects = [
-    { name: 'E-Commerce Platform', tech: 'React, Node.js', status: 'Completed' },
+    { name: 'E-Commerce Platform', tech: 'React ReactToolkit, Node.js', status: 'Completed' },
     { name: 'Whatsapp Integration', tech: 'Zoho, API', status: 'In Progress' },
-    { name: 'Data Analytics Dashboard', tech: 'Python, Javascript', status: 'Planning' }
+    { name: 'Data Analytics Dashboard', tech: 'Python, Javascript', status: 'Development' }
   ];
 
   const navigate = useNavigate();
@@ -57,7 +57,7 @@ function Home() {
             <h2 className="title">Software Developer & Zoho Specialist</h2>
             <p className="bio">
               Passionate about creating innovative software solutions and seamless Zoho integrations. 
-              Currently crafting digital experiences at <span className="company">Redian Softwares</span>.
+              Currently solving errors 😂 .
             </p>
             
             <div className="status-indicator">
@@ -188,8 +188,6 @@ function Home() {
       {/* Quick Contact */}
       <section className="quick-contact">
         <div className="contact-card">
-          <h3>Let's Work Together</h3>
-          <p>Have a project in mind? Let's discuss how we can bring your ideas to life.</p>
           <motion.a
             href="mailto:allanmwangi329@gmail.com"
             className="contact-btn"

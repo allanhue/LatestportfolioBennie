@@ -56,9 +56,9 @@ function About () {
           <p>
             I thrive in dynamic environments—whether it’s debugging late-night
             code or optimizing APIs. Outside work, I’m a{' '}
-            <strong>lifelong learner</strong>: diving into documentation,
+            <strong>lifelong learner</strong>: diving into documentation and articles,
             solving problems on <strong>HackerRank</strong>, and contributing to
-            open-source projects. My discipline extends to physical fitness,
+            open-source projects (Kaggle). My discipline extends to physical fitness,
             which fuels my productivity and adaptability in remote/hybrid
             settings.
           </p>
