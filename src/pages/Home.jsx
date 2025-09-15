@@ -108,7 +108,7 @@ function Home() {
       <section className="stats-section">
         <div className="stats-grid">
           {[
-            { icon: FaGraduationCap, number: 2, label: 'Years Experience', color: '#3b82f6' },
+            { icon: FaGraduationCap, number: 1, label: 'Years Experience', color: '#3b82f6' },
             { icon: FaCode, number: 3, label: 'Projects Completed', color: '#10b981' },
             { icon: FaCertificate, number: 7, label: 'Certifications', color: '#f59e0b' },
             { icon: FaRocket, number: 4, label: 'Technologies', color: '#ef4444' }
