@@ -24,7 +24,7 @@ function Home() {
   const skills = ['Python', 'JavaScript', 'Node.js', 'React', 'Zoho', 'Postgres', 'Firebase', 'RestAPI'];
   const recentProjects = [
     { name: 'E-Commerce Platform', tech: 'React ReactToolkit, Node.js', status: 'Completed' },
-    { name: 'Whatsapp Integration', tech: 'Zoho, API', status: 'In Progress' },
+    { name: 'Whatsapp Integration', tech: 'Zoho, Rest API, JavaScript, zcql', status: 'In Progress' },
     { name: 'Data Analytics Dashboard', tech: 'Python, Javascript', status: 'Development' }
   ];
 
@@ -56,7 +56,7 @@ function Home() {
             </div>
             <h2 className="title">Software Developer & Zoho Specialist</h2>
             <p className="bio">
-              Passionate about creating innovative software solutions and seamless Zoho integrations. 
+              {/* Passionate about creating innovative software solutions and seamless Zoho integrations.  */}
               Currently solving errors 😂 .
             </p>
             
@@ -108,7 +108,7 @@ function Home() {
       <section className="stats-section">
         <div className="stats-grid">
           {[
-            { icon: FaGraduationCap, number: 1, label: 'Years Experience', color: '#3b82f6' },
+            { icon: FaGraduationCap, number: 2, label: 'Years Experience', color: '#3b82f6' },
             { icon: FaCode, number: 3, label: 'Projects Completed', color: '#10b981' },
             { icon: FaCertificate, number: 7, label: 'Certifications', color: '#f59e0b' },
             { icon: FaRocket, number: 4, label: 'Technologies', color: '#ef4444' }

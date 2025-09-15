@@ -3,6 +3,15 @@ import '../css/style.css'
 
 const Exp = () => {
   const educationData = [
+
+      {
+      year: '2024',
+      institution: ' The Open University Of Kenya',
+      title: ' BSc. Data Science',
+      description: 'Comprehensive program covering statistics, machine learning, data visualization, and big data technologies. Developed skills in Python (Pandas, NumPy), SQL, and data storytelling through projects like customer segmentation and sales forecasting using real-world datasets.',
+      skills: ['Python', 'TensorFlow', 'Machine Learning', 'Data Science',],
+      status: 'In Progress'
+    },
     {
       year: '2024',
       institution: 'IBM Coursera',
