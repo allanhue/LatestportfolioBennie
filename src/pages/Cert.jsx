@@ -5,7 +5,7 @@ function Cert () {
     <div className='container'>
       <div className='intro-section card'>
         <p className='text-lg mb-4'>
-          Data Scientist Researcher | Advancing AI in Healthcare, FinTech 
+          Data Scientist Practitioner | Advancing AI in Healthcare, FinTech 
         </p>
       </div>
 

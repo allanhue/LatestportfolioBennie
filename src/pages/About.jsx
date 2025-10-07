@@ -27,14 +27,13 @@ function About () {
           <p>
             I’m <strong>Allan Mwangi</strong>, a{' '}
             <strong>Full-Stack Developer</strong> and{' '}
-            <strong>AI/ML enthusiast</strong> with a passion for building
+            <strong>Data Science Practitioner</strong> with a passion for building
             data-driven solutions. Certified by <strong>IBM (Coursera)</strong>{' '}
             and <strong>Kaggle</strong>, I specialize in{' '}
             <strong>
-              Python, JavaScript (React/Node.js), and cloud technologies
+              Python, JavaScript and cloud technologies (Zoho Ecosytem)
             </strong>
-            , with hands-on experience in developing scalable web apps and
-            deploying machine learning models.
+            , with hands-on experience in developing scalable web apps and providing data-driven insights.
           </p>
 
           <h3>My Journey</h3>
@@ -42,14 +41,13 @@ function About () {
             My tech journey began with mastering <strong>Python and SQL</strong>{' '}
             through Kaggle, followed by formal training in{' '}
             <strong>
-              full-stack development (JavaScript, React, Node.js, FastAPI)
+              full-stack development ( Javascript, Python, FastAPI)
             </strong>{' '}
             and <strong>cloud security</strong> via IBM. These skills enabled me
-            to collaborate effectively in agile teams while staying ahead of
+            to collaborate effectively in agile methodology while staying ahead of
             industry trends. Today, I combine my{' '}
             <strong>software engineering expertise</strong> with a growing focus
-            on <strong>AI/ML applications</strong>, particularly in healthcare,
-            finance, and aviation.
+            on <strong>AI/ML applications</strong>, particularly research projects on fintech , health industry.
           </p>
 
           <h3>What Drives Me</h3>
