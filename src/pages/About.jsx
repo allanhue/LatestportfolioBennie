@@ -105,7 +105,7 @@ function About () {
         <ContactForm />
       </section>
 
-      <section className='social-media'>
+      {/* <section className='social-media'>
         <h3>Connect with me</h3>
         <a href='https://www.linkedin.com/in/allan-mwangi-626902302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
           <i className='fa-brands fa-linkedin fa-3x'></i>
@@ -113,7 +113,7 @@ function About () {
         <a href='https://github.com/allanhue'>
           <i className='fa-brands fa-github fa-3x'></i>
         </a>
-      </section>
+      </section> */}
     </div>
   )
 }

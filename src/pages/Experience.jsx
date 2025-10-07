@@ -53,7 +53,7 @@ const Experience = () => {
           </li>
           <li>
             Automated client workflows via{' '}
-            <strong>custom API integrations</strong> (Daraja Api, Firebase)
+            <strong>custom API integrations</strong> (Daraja Api, Firebase, Stripe)
           </li>
           <li>
             Maintained <strong>100% project delivery rate</strong> using

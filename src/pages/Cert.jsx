@@ -32,13 +32,13 @@ function Cert () {
           <h3>Frameworks & Platforms</h3>
           <ul>
             <li>
-              <strong>Frontend</strong>: React, Tailwind CSS
+              <strong>Frontend</strong>: JavaScript, Tailwind CSS
             </li>
             <li>
-              <strong>Backend</strong>: Node.js, Express, FastAPI
+              <strong>Backend</strong>: Node.js(Express), FastAPI
             </li>
             <li>
-              <strong>Zoho Ecosystem</strong>: Catalyst, Suite ERP
+              <strong>Zoho Ecosystem</strong>: Zoho Catalyst, Suite ERP
             </li>
             <li>
               <strong>Cloud</strong>: GCP Basics, Deployment
