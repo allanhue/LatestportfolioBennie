@@ -189,7 +189,7 @@ function Home() {
       <section className="quick-contact">
         <div className="contact-card">
           <motion.a
-            href="mailto:allanmwangi329@gmail.com"
+            href="mailto:"
             className="contact-btn"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}>

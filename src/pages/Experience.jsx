@@ -7,7 +7,7 @@ const Experience = () => {
       <h2 className='section-title'>Experience</h2>
 
       <div className='experience-item'>
-        <h3>Software Developer (Zoho Specialist)</h3>
+        <h3>Software Engineer (Zoho Specialist)</h3>
         <p className='text-accent'>Redian Softwares | 2025 - Present</p>
         <ul className='list-disc ml-4'>
           <li>
@@ -16,7 +16,7 @@ const Experience = () => {
           </li>
           <li>
             Integrate Zoho CRM/Creator with <strong>third-party APIs</strong>{' '}
-            (Payment gateways,  Google Workspace), improving data
+            (Payment gateways,  Google Workspace, Custom Apps), improving data
             synchronization
           </li>
           <li>
