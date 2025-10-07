@@ -26,8 +26,10 @@ function About () {
         <div className='about' id='about'>
           <p>
             I’m <strong>Allan Mwangi</strong>, a{' '}
-            <strong>Software Engineer</strong> and{' '}
-            <strong>Data Science Practitioner</strong> with a passion for building
+            <strong>Software Engineer</strong> 
+            {/* and{' '} */}
+            {/* <strong>Data Science Practitioner</strong>  */}
+            with a passion for building
             data-driven solutions. Certified by <strong>IBM (Coursera)</strong>{' '}
             and <strong>Kaggle</strong>, I specialize in{' '}
             <strong>
