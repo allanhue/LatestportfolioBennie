@@ -31,7 +31,7 @@ const Exp = () => {
   ];
 
   const achievements = [
-    'Daily coding challenges on HackerRank',
+    'Coding challenges on HackerRank',
     'Peer mentorship and collaborative development',
     'Git/GitHub for version-controlled development',
     'Professional freelance project delivery',
