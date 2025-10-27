@@ -54,7 +54,7 @@ function Home() {
               <span className="wave"> 🧑‍💻</span>
               <h1>Hi, I'm <span className="name-highlight">Allan</span></h1>
             </div>
-            <h2 className="title">Software Developer & Zoho Specialist</h2>
+            <h2 className="title">Software Engineer & Zoho Specialist</h2>
             <p className="bio">
               {/* Passionate about creating innovative software solutions and seamless Zoho integrations.  */}
               Currently solving errors 😂 .
