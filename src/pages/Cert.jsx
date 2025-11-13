@@ -23,7 +23,7 @@ function Cert () {
               <strong>SQL</strong> (PostgreSQL, Query Optimization)
             </li>
             <li>
-              <strong>Zoho Deluge</strong> (Low-Code, Automation)
+              <strong>Zoho Deluge</strong> (Automation)
             </li>
           </ul>
         </div>
@@ -57,7 +57,7 @@ function Cert () {
               <strong>DevOps</strong>: Git/GitHub, CI/CD Pipelines
             </li>
             <li>
-              <strong>AI/ML</strong>: Predictive Modeling, TensorFlow (Learning)
+              <strong>AI/ML</strong>: Predictive Modeling, PyTorch, Scikit-learn (Learning)
             </li>
             <li>
               <strong>Soft Skills</strong>: Agile Collaboration, Problem-Solving
