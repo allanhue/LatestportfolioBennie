@@ -4,29 +4,29 @@ import '../css/style.css';
 function Projects() {
   const projects = [
     {
+      title: "Financial Fraud Detection",
+      description: "Kaggle competition project using Python to identify money laundering patterns in 50k+ transaction records. Achieved 92% accuracy with Random Forest model.",
+      technologies: ["Python", "Pandas", "Scikit-learn", "Numpy", "Data Visualization"],
+      githubLink: "https://github.com/allanhue/data-vizualisation",
+      liveLink: "https://www.kaggle.com/datasets",
+      status: "Completed"
+    },
+    {
+      title: "Saas Product Featuring Crm and Transaction Management",
+      description: "A comprehensive SaaS platform integrating CRM and transaction management functionalities using fast api(python)  and react javascript frontend for automation.",
+      technologies: ["Python", "Supabase", "JavaScript", "PostgreSQL"],
+      // githubLink: "https://github.com/allanhue/data-vizualisation",
+      // liveLink: "https://saasllanstarfin.onrender.com/",
+      status: "In Development"
+    },
+    {
       title: "Developer Portfolio Website",
       description: "A dynamic showcase of my full-stack capabilities, built with React and modern CSS. Features responsive design, project case studies, and dark/light theme toggle.",
-      technologies: ["React", "CSS3", "JavaScript", "Responsive Design"],
+      technologies: ["React", "Tailwindcss", "JavaScript", "Responsive Design"],
       githubLink: "https://github.com/allanhue/LatestportfolioBennie",
       liveLink: "#",
       status: "Live"
     },
-    // {
-    //   title: "On-Demand Cleaning Services App",
-    //   description: "A marketplace connecting users with local cleaning professionals. Features service selection wizard, user authentication, and booking system.",
-    //   technologies: ["React", "Firebase", "JavaScript", "CSS3"],
-    //   githubLink: "https://github.com/allanhue/data-vizualisation",
-    //   liveLink: "https://rianac.netlify.app/",
-    //   status: "In Development"
-    // },
-    {
-      title: "Financial Fraud Detection",
-      description: "Kaggle competition project using Python to identify money laundering patterns in 50k+ transaction records. Achieved 92% accuracy with Random Forest model.",
-      technologies: ["Python", "Pandas", "Scikit-learn", "Data Visualization"],
-      githubLink: "https://github.com/allanhue/data-vizualisation",
-      liveLink: "https://www.kaggle.com/datasets",
-      status: "Completed"
-    }
   ];
 
   return (
