@@ -8,8 +8,8 @@ const Exp = () => {
       year: '2024',
       institution: ' The Open University Of Kenya',
       title: ' BSc. Data Science',
-      description: 'Comprehensive program covering statistics, machine learning, data visualization, and big data technologies. Developed skills in Python (Pandas, NumPy), SQL, and data storytelling through projects like customer segmentation and sales forecasting using real-world datasets.',
-      skills: ['Python', 'TensorFlow', 'Machine Learning', 'Data Science',],
+      description: 'Comprehensive program covering statistics, machine learning, data visualization, and big data technologies. Developed skills in Python (Pandas, NumPy), SQL, and data storytelling through projects like customer relations on IT entrepreneurship and sales forecasting using real-world datasets.',
+      skills: ['Python', 'Pytorch', 'Machine Learning', 'Data Science',],
       status: 'In Progress'
     },
     {
@@ -17,15 +17,15 @@ const Exp = () => {
       institution: 'IBM Coursera',
       title: 'Full-Stack Software Developer Certificate',
       description: 'Mastered end-to-end development and deployed real-world projects like an e-commerce platform using React, Node.js, and PostgreSQL. This training equipped me to deliver client solutions professionally, including freelance work on Fiverr and Upwork where I handled full project lifecycles—from UI design to cloud deployment on Netlify.',
-      skills: ['React', 'Node.js', 'PostgreSQL', 'Full-Stack Development', 'Cloud Deployment'],
+      skills: ['Software Engineering Principles, React', 'Node.js', 'PostgreSQL', 'Full-Stack Development', 'Cloud Deployment'],
       status: 'Completed'
     },
     {
       year: '2024',
       institution: 'Self-Directed Learning',
       title: 'AI/ML Research & Development',
-      description: 'Currently channeling my discipline into AI/ML research, applying tools like TensorFlow and Python to build predictive models—blending my full-stack expertise with a passion for intelligent systems.',
-      skills: ['Python', 'TensorFlow', 'Machine Learning', 'Data Science', 'Predictive Modeling'],
+      description: 'Currently channeling my discipline into AI/ML research, applying tools like scikit-learn and Python to build predictive models—blending my full-stack expertise with a passion for intelligent systems.',
+      skills: ['Python', 'Scikit-learn', 'Machine Learning', 'Data Science', 'Predictive Modeling'],
       status: 'In Progress'
     }
   ];

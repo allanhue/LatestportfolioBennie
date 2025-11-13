@@ -33,7 +33,7 @@ function Projects() {
     <div className='container'>
       <h1 className='section-title'>Project Portfolio</h1>
       <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '3rem', textAlign: 'center' }}>
-        A showcase of my development projects, from web applications to data science solutions.
+        A showcase of my development projects, from  applications development to data science solutions.
       </p>
       
       <div className='skills-grid'>
