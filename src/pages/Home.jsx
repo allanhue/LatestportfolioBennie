@@ -21,7 +21,7 @@ function Num({ n }) {
 function Home() {
   const [hoveredStat, setHoveredStat] = useState(null);
 
-  const skills = ['Python', 'JavaScript', 'Node.js', 'React', 'Zoho Deluge&ERP', 'Postgres', 'Supabase', 'RestAPI'];
+  const skills = ['Python', 'JavaScript', 'R', 'React', 'Zoho Deluge&ERP', 'Postgres', 'Supabase', 'Scitkit-learn'];
   const recentProjects = [
     { name: 'E-Commerce Platform', tech: 'React ReactToolkit, Node.js', status: 'Completed' },
     { name: 'Whatsapp Integration', tech: 'Zoho, Rest API, JavaScript, zcql', status: 'In Progress' },
