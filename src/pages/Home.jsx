@@ -21,7 +21,7 @@ function Num({ n }) {
 function Home() {
   const [hoveredStat, setHoveredStat] = useState(null);
 
-  const skills = ['Python', 'JavaScript', 'R', 'React', 'Zoho Deluge&ERP', 'Postgres', 'Supabase', 'Scitkit-learn'];
+  const skills = ['Python', 'JavaScript', 'R-programming', 'React', 'Zoho Deluge&ERP', 'Postgres', 'Supabase', 'Scikit-learn'];
   const recentProjects = [
     { name: 'E-Commerce Platform', tech: 'React ReactToolkit, Node.js', status: 'Completed' },
     { name: 'Whatsapp Integration', tech: 'Zoho, Rest API, JavaScript, zcql', status: 'In Progress' },
@@ -108,8 +108,8 @@ function Home() {
       <section className="stats-section">
         <div className="stats-grid">
           {[
-            { icon: FaGraduationCap, number: 1, label: 'Years Experience', color: '#3b82f6' },
-            { icon: FaCode, number: 3, label: 'Projects Completed', color: '#10b981' },
+            { icon: FaGraduationCap, number: 2, label: 'Years Experience', color: '#3b82f6' },
+            { icon: FaCode, number: 5, label: 'Projects Completed', color: '#10b981' },
             { icon: FaCertificate, number: 7, label: 'Certifications', color: '#f59e0b' },
             { icon: FaRocket, number: 4, label: 'Technologies', color: '#ef4444' }
           ].map((stat, index) => {
