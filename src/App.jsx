@@ -3,6 +3,7 @@ import { lazy, Suspense } from "react";
 import Layout from "./layouts/Layout";
 import { HashRouter } from "react-router-dom";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { Spinner } from "./css/Components/spinner";
 
 // Lazy load pages
 const Home = lazy(() => import("./pages/Home"));
@@ -12,26 +13,26 @@ const Exp = lazy(() => import("./pages/Exp"));
 const About = lazy(() => import("./pages/About"));
 const Experience = lazy(() => import("./pages/Experience"));
 
-import { Spinner } from "./css/Components/spinner";
-
 function App() {
   return (
-    <ThemeProvider>
-      <HashRouter>
-        <Suspense fallback={<Spinner />}>
-          <Layout>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} /> 
-              <Route path="/experience" element={<Experience />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/certifications" element={<Cert />} />
-              <Route path="/education" element={<Exp />} />
-            </Routes>
-          </Layout>
-        </Suspense>
-      </HashRouter>
-    </ThemeProvider>
+    <div style={{ backgroundImage: "url('/image.png')", backgroundSize: 'cover', backgroundAttachment: 'fixed', minHeight: '100vh' }}>
+      <ThemeProvider>
+        <HashRouter>
+          <Suspense fallback={<Spinner />}>
+            <Layout>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} /> 
+                <Route path="/experience" element={<Experience />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/certifications" element={<Cert />} />
+                <Route path="/education" element={<Exp />} />
+              </Routes>
+            </Layout>
+          </Suspense>
+        </HashRouter>
+      </ThemeProvider>
+    </div>
   );
 }
 

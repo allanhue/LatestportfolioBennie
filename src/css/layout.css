@@ -1,0 +1,31 @@
+.layout-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.layout-wrapper::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(20, 28, 45, 0.80) 0%, rgba(35, 55, 90, 0.85) 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.main-content {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .layout-wrapper::before {
+    background: linear-gradient(135deg, rgba(20, 28, 45, 0.87) 0%, rgba(35, 55, 90, 0.92) 100%);
+  }
+}

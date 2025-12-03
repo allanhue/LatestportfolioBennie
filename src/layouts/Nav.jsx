@@ -62,7 +62,7 @@ function Nav() {
             </Link>
           </li>
           <li className="theme-toggle-nav">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
           </li>
         </div>
       </ul>
