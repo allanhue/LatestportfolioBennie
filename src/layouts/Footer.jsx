@@ -21,7 +21,7 @@ function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="footer-section">
+          {/* <div className="footer-section">
             <h4>Quick Links</h4>
             <ul className="footer-links">
               <li><a href="#/about">About</a></li>
@@ -29,21 +29,21 @@ function Footer() {
               <li><a href="#/projects">Projects</a></li>
               <li><a href="#/certifications">Certifications</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Section */}
-          <div className="footer-section">
+          {/* <div className="footer-section">
             <h4>Contact</h4>
             <ul className="footer-links">
               <li><a href="mailto:allanmwangi329@gmail.com">Email</a></li>
               <li><a href="https://github.com/allanhue" target="_blank" rel="noopener noreferrer">GitHub</a></li>
               <li><a href="https://www.linkedin.com/in/allan-mwangi-626902302/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Social Links */}
           <div className="footer-section">
-            <h4>Follow</h4>
+            <h4>Contact</h4>
             <div className="footer-social">
               <a href="https://github.com/allanhue" target="_blank" rel="noopener noreferrer" className="social-icon" title="GitHub">
                 <FaGithub />
