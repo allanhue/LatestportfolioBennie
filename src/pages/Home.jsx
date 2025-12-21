@@ -79,11 +79,11 @@ function Home() {
           
             </div>
 
-            <div className="social-links">
+            {/* <div className="social-links">
               <a href="https://github.com/allanhue" aria-label="GitHub"><FaGithub /></a>
               <a href="https://www.linkedin.com/in/allan-mwangi-626902302/" aria-label="LinkedIn"><FaLinkedin /></a>
               <a href="https://mailto:allanmwangi329@gmail.com" aria-label="Email"><FaEnvelope /></a>
-            </div>
+            </div> */}
           </motion.div>
 
           <motion.div 

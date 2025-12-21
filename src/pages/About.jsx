@@ -31,11 +31,11 @@ function About () {
             <strong> Data Science Practitioner</strong>  {' '}
                with a passion for building
             data-driven solutions. Certified by <strong>IBM (Coursera)</strong>{' '}
-            and <strong>Kaggle</strong>, I specialize in{' '}
+            and <strong>Kaggle</strong>. I specialize in{' '}
             <strong>
               Python, JavaScript and cloud technologies (Zoho Ecosytem)
             </strong>
-            , with hands-on experience in developing scalable web apps and providing data-driven insights.
+            {' '} with hands-on experience in developing scalable web apps and providing data-driven insights.
           </p>
 
           <h3>My Journey</h3>
@@ -45,7 +45,7 @@ function About () {
             <strong>
               full-stack development ( Javascript, Python, FastAPI)
             </strong>{' '}
-            and <strong>cloud security</strong> via IBM. These skills enabled me
+            and <strong>cloud architecture</strong> via IBM. These skills enabled me
             to collaborate effectively in agile methodology while staying ahead of
             industry trends. Today, I combine my{' '}
             <strong>software engineering expertise</strong> with a growing focus
@@ -58,7 +58,7 @@ function About () {
             code or optimizing APIs. Outside work, I’m a{' '}
             <strong>lifelong learner</strong>: diving into documentation and articles,
             solving problems on <strong>HackerRank</strong>, and contributing to
-            open-source projects (Kaggle). My discipline extends to physical fitness,
+            open-source projects (Kaggle). My discipline extends to physical fitness
             which fuels my productivity and adaptability in remote/hybrid
             settings.
           </p>

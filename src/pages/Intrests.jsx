@@ -19,8 +19,8 @@ const Interests = () => {
       description: "Experienced in data analysis, visualization and predictive modeling. Successfully completed Kaggle projects including financial fraud detection achieving 92% accuracy. Passionate about extracting meaningful insights from complex datasets.",
       focus: "Data Analysis, Predictive Modeling, Data Visualization",
       status: "Active",
-      color: "#10b981",
-      link: "https://www.kaggle.com/",
+       color: "#10b981",
+      link: "https://www.kaggle.com/allanyengsnxmwas",
       linkText: "View Kaggle Profile"
     },
     {
@@ -56,7 +56,7 @@ const Interests = () => {
     <div className='container'>
       <h1 className='section-title'>Interests</h1>
       <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '3rem', textAlign: 'center' }}>
-        My journey spans Software Engineering, Data Science, and AI Engineering, driven by continuous learning and innovation. I am continuously building expertise in feature engineering while expanding my knowledge across the ML/AI spectrum.
+        My journey spans Software Engineering, Data Science and AI Engineering, driven by continuous learning and innovation. I am continuously building expertise in feature engineering while expanding my knowledge across the ML/AI spectrum.
       </p>
       
       <div className='skills-grid' style={{ marginBottom: '3rem' }}>
@@ -68,7 +68,7 @@ const Interests = () => {
               className='card animate-fade-in' 
               style={{ 
                 animationDelay: `${index * 0.1}s`,
-                borderLeft: `4px solid ${interest.color}`
+                // borderLeft: `4px solid ${interest.color}`
               }}
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
