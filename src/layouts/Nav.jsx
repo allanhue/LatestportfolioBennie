@@ -61,6 +61,11 @@ function Nav() {
               Education
             </Link>
           </li>
+          <li>
+            <Link to="/interests" className="nav-link" onClick={() => setOpen(false)}>
+              Interests
+            </Link>
+          </li>
           <li className="theme-toggle-nav">
             {/* <ThemeToggle /> */}
           </li>

@@ -12,7 +12,7 @@ const Projects = lazy(() => import("./pages/Projects"));
 const Exp = lazy(() => import("./pages/Exp"));
 const About = lazy(() => import("./pages/About"));
 const Experience = lazy(() => import("./pages/Experience"));
-
+const Interests = lazy(() => import("./pages/intrests"));
 function App() {
   return (
     <div style={{ backgroundImage: "url('/image.png')", backgroundSize: 'cover', backgroundAttachment: 'fixed', minHeight: '100vh' }}>
@@ -27,6 +27,7 @@ function App() {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/certifications" element={<Cert />} />
                 <Route path="/education" element={<Exp />} />
+                <Route path="/interests" element={<Interests />} />
               </Routes>
             </Layout>
           </Suspense>
