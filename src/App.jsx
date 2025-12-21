@@ -12,7 +12,7 @@ const Projects = lazy(() => import("./pages/Projects"));
 const Exp = lazy(() => import("./pages/Exp"));
 const About = lazy(() => import("./pages/About"));
 const Experience = lazy(() => import("./pages/Experience"));
-const Interests = lazy(() => import("./pages/intrests"));
+const Interests = lazy(() => import("./pages/Intrests"));
 function App() {
   return (
     <div style={{ backgroundImage: "url('/image.png')", backgroundSize: 'cover', backgroundAttachment: 'fixed', minHeight: '100vh' }}>

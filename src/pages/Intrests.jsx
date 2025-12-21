@@ -56,7 +56,7 @@ const Interests = () => {
     <div className='container'>
       <h1 className='section-title'>Interests</h1>
       <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '3rem', textAlign: 'center' }}>
-        My journey spans Software Engineering, Data Science, and AI Engineering, driven by continuous learning and innovation. I  am continualisly building specialize in feature engineering while building expertise across the ML/AI spectrum.
+        My journey spans Software Engineering, Data Science, and AI Engineering, driven by continuous learning and innovation. I am continuously building expertise in feature engineering while expanding my knowledge across the ML/AI spectrum.
       </p>
       
       <div className='skills-grid' style={{ marginBottom: '3rem' }}>
