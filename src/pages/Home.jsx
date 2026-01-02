@@ -21,10 +21,10 @@ function Num({ n }) {
 function Home() {
   const [hoveredStat, setHoveredStat] = useState(null);
 
-  const skills = ['Python', 'JavaScript', 'R-programming', 'React', 'Zoho Deluge&ERP', 'Postgres', 'Supabase', 'Scikit-learn'];
+  const skills = ['Python', 'JavaScript', 'C', 'Html & Css', 'React', 'Zoho Deluge', 'Postgres', 'Fast Api','Supabase', 'Scikit-learn'];
   const recentProjects = [
-    { name: 'E-Commerce Platform', tech: 'React ReactToolkit, Node.js', status: 'Completed' },
-    { name: 'Whatsapp Integration', tech: 'Zoho, Rest API, JavaScript, zcql', status: 'In Progress' },
+    { name: 'Car Dealership Commerce', tech: 'React React-Redux, Node.js, Tailwind CSS', status: 'Completed' },
+    { name: 'Whatsapp Integration', tech: 'Zoho Deluge, Rest API, JavaScript, Python', status: 'In Progress' },
     { name: 'Data Analytics Dashboard', tech: 'Python, Javascript', status: 'Development' }
   ];
 
@@ -57,12 +57,12 @@ function Home() {
             <h2 className="title">Software Engineer & Zoho Specialist</h2>
             <p className="bio">
               {/* Passionate about creating innovative software solutions and seamless Zoho integrations.  */}
-              Currently solving errors 😂 .
+              Currently implementing software solutions and learning exploring new technologies.
             </p>
             
             <div className="status-indicator">
               <div className="status-dot"></div>
-              <span>Available for new opportunities</span>
+              <span>Open to new opportunities</span>
             </div>
 
             <div className="cta-buttons">
