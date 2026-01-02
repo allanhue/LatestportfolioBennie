@@ -207,7 +207,7 @@ const Interests = () => {
       <div className='card' style={{ marginTop: '2rem', textAlign: 'center' }}>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: '1.8', margin: 0 }}>
           <strong style={{ color: 'var(--accent)' }}>Current Focus:</strong> Diving deep into feature engineering techniques, 
-          applying them to real-world Kaggle competitions, and continuously improving algorithmic problem-solving skills through LeetCode practice.
+          applying them to real-world Kaggle competitions and continuously improving algorithmic problem-solving skills through LeetCode and hackerrank problems.
         </p>
       </div>
     </div>

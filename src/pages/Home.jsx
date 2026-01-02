@@ -57,7 +57,7 @@ function Home() {
             <h2 className="title">Software Engineer & Zoho Specialist</h2>
             <p className="bio">
               {/* Passionate about creating innovative software solutions and seamless Zoho integrations.  */}
-              Currently implementing software solutions and learning exploring new technologies.
+              Currently implementing software solutions and learning exploring new technologies 🔭.
             </p>
             
             <div className="status-indicator">

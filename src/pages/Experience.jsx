@@ -40,7 +40,7 @@ const Experience = () => {
         <ul className='list-disc ml-4'>
           <li>
             Built <strong>3 web apps</strong> (React/Node.js) with 95% client
-            satisfaction, including an e-commerce platform with  faster peak loads
+            satisfaction, including an e-commerce solution platform with  faster peak loads
           </li>
           <li>
               Increase code efficiency through{' '}
@@ -53,7 +53,7 @@ const Experience = () => {
           </li>
           <li>
             Automated client workflows via{' '}
-            <strong>custom API integrations</strong> (Daraja Api, Firebase, Stripe)
+            <strong>custom API integrations</strong> (Daraja Api, Firebase)
           </li>
           <li>
             Maintained <strong>100% project delivery rate</strong> using

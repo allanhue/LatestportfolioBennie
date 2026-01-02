@@ -5,7 +5,7 @@ function Cert () {
     <div className='container'>
       <div className='intro-section card'>
         <p className='text-lg mb-4'>
-          Data Scientist Practitioner Ai Engineer | Advancing AI in Healthcare, FinTech 
+          Data Scientist Practitioner  | Advancing AI in Healthcare, FinTech 
         </p>
       </div>
 
@@ -14,7 +14,7 @@ function Cert () {
           <h3>Programming & Languages</h3>
           <ul>
             <li>
-              <strong>Python</strong> (Pandas, NumPy, RainForest-Regression)
+              <strong>Python</strong> (Pandas, NumPy, Matplotlib, Scikit-learn)
             </li>
             <li>
               <strong>JavaScript</strong> (ES6+, React, Node.js)
@@ -32,7 +32,7 @@ function Cert () {
           <h3>Frameworks & Platforms</h3>
           <ul>
             <li>
-              <strong>Frontend</strong>: JavaScript, Tailwind CSS
+              <strong>Frontend</strong>: React, Tailwind CSS
             </li>
             <li>
               <strong>Backend</strong>: Node.js(Express), FastAPI
@@ -51,7 +51,7 @@ function Cert () {
           <ul>
             <li>
               <strong>Data Science</strong>: Cleaning, Analysis, Visualization
-              (Matplotlib, Seaborn)
+              (Matplotlib, Seaborn, Plotly, Scikit-learn)
             </li>
             <li>
               <strong>DevOps</strong>: Git/GitHub, CI/CD Pipelines
