@@ -1,102 +1,176 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/style.css";
 import { useSpring, animated } from "react-spring";
 import { motion } from "framer-motion";
 import photo from "../assets/passport allan.jpg";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaDownload, FaCode, FaRocket, FaCertificate, FaGraduationCap } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaCode,
+  FaRocket,
+  FaCertificate,
+  FaGraduationCap,
+} from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
-import { Link, useNavigate  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
+/* Typewriter Component */
+function TypeWriter({ text, speed = 80, delay = 400 }) {
+  const [displayed, setDisplayed] = useState("");
+  const [showCursor, setShowCursor] = useState(true);
+
+  useEffect(() => {
+    let timeoutId;
+    let intervalId;
+
+    const startTyping = () => {
+      let i = 0;
+      intervalId = setInterval(() => {
+        setDisplayed(text.substring(0, i + 1));
+        i++;
+        if (i >= text.length) {
+          clearInterval(intervalId);
+          setTimeout(() => setShowCursor(false), 800);
+        }
+      }, speed);
+    };
+
+    timeoutId = setTimeout(startTyping, delay);
+    return () => {
+      clearTimeout(timeoutId);
+      clearInterval(intervalId);
+    };
+  }, [text, speed, delay]);
+
+  return (
+    <>
+      {displayed}
+      {showCursor && <span className="typewriter-cursor">|</span>}
+    </>
+  );
+}
+
+/* Animated Number */
 function Num({ n }) {
-  const props = useSpring({
+  const { number } = useSpring({
     from: { number: 0 },
     to: { number: n },
     delay: 200,
-    config: { mass: 1, tension: 20, friction: 10 },
+    config: { tension: 120, friction: 14 },
   });
-
-  return <animated.span>{props.number.to((n) => Math.floor(n))}</animated.span>;
+  return <animated.span>{number.to((val) => Math.floor(val))}</animated.span>;
 }
 
+/* Home Component */
 function Home() {
-  const [hoveredStat, setHoveredStat] = useState(null);
+  const [hovered, setHovered] = useState(null);
+  const navigate = useNavigate();
 
-  const skills = ['Python', 'JavaScript', 'C', 'Html & Css', 'React', 'Zoho Deluge', 'Postgres', 'Fast Api','Supabase', 'Scikit-learn'];
-  const recentProjects = [
-    { name: 'Car Dealership Commerce', tech: 'React React-Redux, Node.js, Tailwind CSS', status: 'Completed' },
-    { name: 'Whatsapp Integration', tech: 'Zoho Deluge, Rest API, JavaScript, Python', status: 'In Progress' },
-    { name: 'Data Analytics Dashboard', tech: 'Python, Javascript', status: 'Development' }
+  const skills = [
+    "Python",
+    "JavaScript",
+    "C",
+    "HTML & CSS",
+    "React",
+    "Zoho Deluge",
+    "PostgreSQL",
+    "FastAPI",
+    "Supabase",
+    "Scikit-learn",
   ];
 
-  const navigate = useNavigate();
-  const handleClick = () => {
-    navigate('/projects');
-  };
+  const projects = [
+    {
+      name: "Car Dealership Commerce",
+      tech: "React, Redux, Node.js, Tailwind CSS",
+      status: "Completed",
+    },
+    {
+      name: "WhatsApp Integration",
+      tech: "Zoho Deluge, REST API, JavaScript, Python",
+      status: "In Progress",
+    },
+    {
+      name: "Data Analytics Dashboard",
+      tech: "Python, JavaScript",
+      status: "Development",
+    },
+  ];
+
+  const stats = [
+    { icon: FaGraduationCap, number: 2, label: "Years of Experience", color: "#3b82f6" },
+    { icon: FaCode, number: 5, label: "Projects Completed", color: "#10b981" },
+    { icon: FaCertificate, number: 7, label: "Certifications Earned", color: "#f59e0b" },
+    { icon: FaRocket, number: 4, label: "Technologies Mastered", color: "#ef4444" },
+  ];
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.6 }}
       className="home-container"
     >
-      {/* Hero Section */}
+      {/* -------------------- Hero Section -------------------- */}
       <section className="hero-section">
-        <div className="hero-background"></div>
         <div className="hero-content">
-          <motion.div 
+          <motion.div
             className="hero-text"
-            initial={{ x: -50, opacity: 0 }}
+            initial={{ x: -40, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
             <div className="greeting">
-              <span className="wave"> 🧑‍💻</span>
-              <h1>Hi, I'm <span className="name-highlight">Allan</span></h1>
+              <span className="wave">🧑‍💻</span>
+              <h1>
+                Hi, I'm{" "}
+                <span className="name-highlight">
+                  <TypeWriter text="Allan" delay={600} speed={100} />
+                </span>
+              </h1>
             </div>
-            <h2 className="title">Software Engineer & Zoho Specialist</h2>
+
+            <h2 className="title">
+              <TypeWriter
+                text="Software Engineer & Zoho Specialist"
+                delay={1500}
+                speed={70}
+              />
+            </h2>
+
             <p className="bio">
-              {/* Passionate about creating innovative software solutions and seamless Zoho integrations.  */}
-              Currently implementing software solutions and learning exploring new technologies 🔭.
+              Passionate about developing innovative software solutions and integrating
+              intelligent automation systems using modern web technologies and AI tools.
             </p>
-            
+
             <div className="status-indicator">
               <div className="status-dot"></div>
               <span>Open to new opportunities</span>
             </div>
 
             <div className="cta-buttons">
-              <motion.button 
+              <motion.button
                 className="btn-primary"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-              //add a link to projects 
-              onClick={() => navigate('/projects')}
+                onClick={() => navigate("/projects")}
               >
                 <FaRocket /> View My Work
               </motion.button>
-
-          
             </div>
-
-            {/* <div className="social-links">
-              <a href="https://github.com/allanhue" aria-label="GitHub"><FaGithub /></a>
-              <a href="https://www.linkedin.com/in/allan-mwangi-626902302/" aria-label="LinkedIn"><FaLinkedin /></a>
-              <a href="https://mailto:allanmwangi329@gmail.com" aria-label="Email"><FaEnvelope /></a>
-            </div> */}
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="hero-image"
-            initial={{ x: 50, opacity: 0 }}
+            initial={{ x: 40, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
             <div className="image-wrapper">
-              <img 
-                src={photo} 
+              <img
+                src={photo}
                 alt="Allan Mwangi"
                 className="profile-image"
+                loading="lazy"
               />
               <div className="image-decoration"></div>
             </div>
@@ -107,21 +181,16 @@ function Home() {
       {/* Stats Section */}
       <section className="stats-section">
         <div className="stats-grid">
-          {[
-            { icon: FaGraduationCap, number: 2, label: 'Years Experience', color: '#3b82f6' },
-            { icon: FaCode, number: 5, label: 'Projects Completed', color: '#10b981' },
-            { icon: FaCertificate, number: 7, label: 'Certifications', color: '#f59e0b' },
-            { icon: FaRocket, number: 4, label: 'Technologies', color: '#ef4444' }
-          ].map((stat, index) => {
+          {stats.map((stat, i) => {
             const Icon = stat.icon;
             return (
-              <motion.div 
-                key={index}
-                className={`stat-card ${hoveredStat === index ? 'hovered' : ''}`}
-                onMouseEnter={() => setHoveredStat(index)}
-                onMouseLeave={() => setHoveredStat(null)}
+              <motion.div
+                key={i}
+                className={`stat-card ${hovered === i ? "hovered" : ""}`}
+                onMouseEnter={() => setHovered(i)}
+                onMouseLeave={() => setHovered(null)}
                 whileHover={{ y: -5 }}
-                style={{ '--accent-color': stat.color }}
+                style={{ "--accent-color": stat.color }}
               >
                 <div className="stat-icon">
                   <Icon />
@@ -140,13 +209,13 @@ function Home() {
       <section className="skills-section">
         <h3>Core Technologies</h3>
         <div className="skills-grid">
-          {skills.map((skill, index) => (
-            <motion.div 
+          {skills.map((skill, i) => (
+            <motion.div
               key={skill}
               className="skill-badge"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 * index }}
+              transition={{ delay: 0.05 * i }}
               whileHover={{ scale: 1.1 }}
             >
               {skill}
@@ -155,44 +224,55 @@ function Home() {
         </div>
       </section>
 
-      {/* Recent Projects Preview */}
+      {/* Projects Preview */}
       <section className="projects-preview">
         <div className="section-header">
           <h3>Recent Projects</h3>
-             <a href="Projects" className="view-all" onClick={() => navigate('/projects')}>
+          <a
+            href="#projects"
+            className="view-all"
+            onClick={(e) => {
+              e.preventDefault();
+              navigate("/projects");
+            }}
+          >
             View All <HiOutlineExternalLink />
           </a>
         </div>
+
         <div className="projects-grid">
-          {recentProjects.map((project, index) => (
-            <motion.div 
-              key={index}
+          {projects.map((p, i) => (
+            <motion.div
+              key={i}
               className="project-card"
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 * index }}
+              transition={{ delay: 0.15 * i }}
               whileHover={{ y: -5 }}
             >
               <div className="project-header">
-                <h4>{project.name}</h4>
-                <span className={`status ${project.status.toLowerCase().replace(' ', '-')}`}>
-                  {project.status}
+                <h4>{p.name}</h4>
+                <span
+                  className={`status ${p.status.toLowerCase().replace(/\s+/g, "-")}`}
+                >
+                  {p.status}
                 </span>
               </div>
-              <p className="project-tech">{project.tech}</p>
+              <p className="project-tech">{p.tech}</p>
             </motion.div>
           ))}
         </div>
       </section>
 
-      {/* Quick Contact */}
+      {/* contact section */}
       <section className="quick-contact">
         <div className="contact-card">
           <motion.a
-            href="mailto:"
+            href="mailto:allanmwangi329@gmail.com"
             className="contact-btn"
             whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}>
+            whileTap={{ scale: 0.95 }}
+          >
             <FaEnvelope /> Email Me
           </motion.a>
         </div>

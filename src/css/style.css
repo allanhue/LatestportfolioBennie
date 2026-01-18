@@ -988,4 +988,18 @@ p {
     padding: 2rem;
   }
 }
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: #3b82f6;
+  margin-left: 3px;
+  vertical-align: middle;
+  animation: blink 0.75s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 
