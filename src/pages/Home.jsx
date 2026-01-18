@@ -110,7 +110,7 @@ function Home() {
       transition={{ duration: 0.6 }}
       className="home-container"
     >
-      {/* -------------------- Hero Section -------------------- */}
+      {/*  Hero Section  */}
       <section className="hero-section">
         <div className="hero-content">
           <motion.div
@@ -131,7 +131,7 @@ function Home() {
 
             <h2 className="title">
               <TypeWriter
-                text="Software Engineer & Zoho Specialist"
+                text="Software Engineer & Zoho/Odoo Specialist"
                 delay={1500}
                 speed={70}
               />
