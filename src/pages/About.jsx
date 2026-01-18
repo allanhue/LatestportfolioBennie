@@ -1,121 +1,174 @@
-import React from 'react'
-import photo from '../assets/passport allan.jpg'
-import ContactForm from '../components/ContactForm'
+import React from "react";
+import photo from "../assets/passport allan.jpg";
+import ContactForm from "../components/ContactForm";
 
-function About () {
+function About() {
   return (
-    <div className='container'>
-      <section className='about-section'>
+
+    <div
+      className="container"
+      style={{
+        maxWidth: "1000px",
+        margin: "0 auto",
+        padding: "2rem 1rem",
+      }}
+    >
+    <br/><br/>
+      {/*  About Section  */}
+      <section
+        className="about-section"
+        style={{
+          textAlign: "center",
+          marginBottom: "3rem",
+        }}
+      >
         <img
           src={photo}
-          alt='Allan Mwangi'
+          alt="Allan Mwangi"
           style={{
-            width: '200px',
-            height: '200px',
-            objectFit: 'cover',
-            borderRadius: '50%',
-            border: '4px solid var(--accent)',
-            marginTop: '1rem'
+            width: "200px",
+            height: "200px",
+            objectFit: "cover",
+            borderRadius: "50%",
+            border: "4px solid var(--accent)",
+            marginBottom: "1rem",
           }}
         />
-        <br />
-        <h4>
-          <em>Who am I?</em>
+        <h4 style={{ color: "var(--accent)", fontStyle: "italic" }}>
+          Who am I?
         </h4>
 
-        <div className='about' id='about'>
+        <div
+          className="about"
+          id="about"
+          style={{
+            textAlign: "left",
+            marginTop: "1.5rem",
+            lineHeight: "1.7",
+            color: "var(--text-secondary)",
+          }}
+        >
           <p>
-            I’m <strong>Allan Mwangi</strong>, an aspiring {' '}
-            {/* <strong>Software Engineer</strong>  */}
-            {/* and{' '} */}
-            <strong> Data Science Practitioner</strong>  {' '}
-               with a passion for building
-            data-driven solutions. Certified by <strong>IBM (Coursera)</strong>{' '}
-            and <strong>Kaggle</strong>. I specialize in{' '}
-            <strong>
-              Python, JavaScript and cloud technologies (Zoho Ecosytem)
-            </strong>
-            {' '} with hands-on experience in developing scalable web apps and providing data-driven insights.
+            I’m <strong>Allan Mwangi</strong>, a passionate{" "}
+            <strong>Software Engineer</strong> and{" "}
+            <strong>Data Science Practitioner</strong> with a focus on building
+            data-driven and scalable solutions. Certified by{" "}
+            <strong>IBM (Coursera)</strong> and <strong>Kaggle</strong>, I
+            specialize in <strong>Python, JavaScript</strong>, and{" "}
+            <strong>cloud technologies</strong> within the Zoho ecosystem. I
+            have hands-on experience designing intelligent systems and
+            developing web apps that transform raw data into actionable insights.
           </p>
 
-          <h3>My Journey</h3>
+          <h3 style={{ color: "var(--accent)", marginTop: "1.5rem" }}>
+            My Journey
+          </h3>
           <p>
-            My tech journey began with mastering <strong>Python and SQL</strong>{' '}
-            through Kaggle, followed by formal training in{' '}
-            <strong>
-              full-stack development ( Javascript, Python, FastAPI)
-            </strong>{' '}
-            and <strong>cloud architecture</strong> via IBM. These skills enabled me
-            to collaborate effectively in agile methodology while staying ahead of
-            industry trends. Today, I combine my{' '}
-            <strong>software engineering expertise</strong> with a growing focus
-            on <strong>AI/ML applications</strong>, particularly research projects on fintech , health industry.
+            My tech journey began with mastering <strong>Python</strong> and{" "}
+            <strong>SQL</strong> through Kaggle. Later, I deepened my expertise
+            in <strong>full-stack development</strong> using JavaScript,
+            FastAPI, and modern cloud architecture via IBM training. These
+            foundations have allowed me to collaborate effectively in{" "}
+            <strong>agile teams</strong> while staying ahead of industry trends.
+            Today, I’m exploring the intersection of{" "}
+            <strong>AI/ML applications</strong> and{" "}
+            <strong>software engineering</strong> — particularly in fintech and
+            healthcare research domains.
           </p>
 
-          <h3>What Drives Me</h3>
+          <h3 style={{ color: "var(--accent)", marginTop: "1.5rem" }}>
+            What Drives Me
+          </h3>
           <p>
-            I thrive in dynamic environments—whether it’s debugging late-night
-            code or optimizing APIs. Outside work, I’m a{' '}
-            <strong>lifelong learner</strong>: diving into documentation and articles,
-            solving problems on <strong>HackerRank</strong> and contributing to
-            open-source projects (Kaggle). My discipline extends to physical fitness
-            which fuels my productivity and adaptability in remote/hybrid
-            settings.
+            I thrive in fast-paced environments—whether it’s debugging
+            late-night code or optimizing REST APIs. Outside of work, I’m a{" "}
+            <strong>lifelong learner</strong> who enjoys reading documentation,
+            solving challenges on <strong>HackerRank</strong>, and contributing
+            to open-source projects on <strong>Kaggle</strong>. I also believe
+            in the importance of balance — physical fitness fuels my discipline,
+            focus, and creativity.
           </p>
 
-          <h3>Why Work With Me?</h3>
+          <h3 style={{ color: "var(--accent)", marginTop: "1.5rem" }}>
+            Why Work With Me
+          </h3>
+          <ul
+            style={{
+              listStyleType: "disc",
+              paddingLeft: "1.5rem",
+              marginBottom: "1rem",
+              lineHeight: "1.8",
+            }}
+          >
+            <li>
+              <strong>End-to-end development expertise</strong> — from frontend
+              to deployment.
+            </li>
+            <li>
+              <strong>Data/AI proficiency</strong> — including Pandas and
+              Scikit-learn.
+            </li>
+            <li>
+              <strong>Collaborative mindset</strong> — comfortable in Git/GitHub
+              workflows and Agile teams.
+            </li>
+            <li>
+              <strong>Problem-solving focus</strong> — I build solutions, not
+              just code.
+            </li>
+          </ul>
+
           <p>
-            I bring:
-            <ul>
-              <li>
-                <strong>End-to-end development skills</strong> (frontend to
-                deployment).
-              </li>
-              <li>
-                <strong>Data/AI proficiency</strong> (Pandas, Scikit-learn).
-              </li>
-              <li>
-                <strong>Collaborative mindset</strong> (Git/GitHub, Agile
-                methodologies).
-              </li>
-              <li>
-                <strong>Problem-solving focus</strong>—I build solutions, not
-                just code.
-              </li>
-            </ul>
-            Let’s connect if you’re looking for a developer who bridges{' '}
-            <strong>technical execution</strong> with{' '}
-            <strong>innovative thinking</strong>. I’m excited to contribute
+            I bridge <strong>technical execution</strong> with{" "}
+            <strong>innovative thinking</strong> — always driven by curiosity
+            and impact. I’m excited to collaborate on projects that challenge me
+            to grow while delivering measurable results.
           </p>
-          <h4>
-            <b>
-              * Check out my Github * -{' '}
-              <a
-                href='https://github.com/allanhue'
-                style={{ color: 'rgb(247, 10, 10)' }}
-              >
-                ALLANHUE
-              </a>
-            </b>
+
+          <h4 style={{ marginTop: "1.5rem" }}>
+            <strong>⭐ Check out my GitHub:</strong>{" "}
+            <a
+              href="https://github.com/allanhue"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "var(--accent)",
+                fontWeight: 600,
+                textDecoration: "none",
+              }}
+            >
+              ALLANHUE
+            </a>
           </h4>
         </div>
       </section>
-      <section className='contact-section'>
-        <h3>Contact Me</h3>
+
+      {/*  Contact Section */}
+      <section
+        className="contact-section"
+        style={{
+          marginTop: "3rem",
+          paddingTop: "2rem",
+          borderTop: "1px solid var(--border-color)",
+          textAlign: "center",
+        }}
+      >
+        <h3 style={{ color: "var(--accent)", marginBottom: "1rem" }}>
+          Contact Me
+        </h3>
+        <p
+          style={{
+            color: "var(--text-secondary)",
+            marginBottom: "1.5rem",
+            fontSize: "1rem",
+          }}
+        >
+          Interested in working together or have a project idea? Let’s connect.
+        </p>
         <ContactForm />
       </section>
-
-      {/* <section className='social-media'>
-        <h3>Connect with me</h3>
-        <a href='https://www.linkedin.com/in/allan-mwangi-626902302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
-          <i className='fa-brands fa-linkedin fa-3x'></i>
-        </a>
-        <a href='https://github.com/allanhue'>
-          <i className='fa-brands fa-github fa-3x'></i>
-        </a>
-      </section> */}
     </div>
-  )
+  );
 }
 
-export default About
+export default About;
