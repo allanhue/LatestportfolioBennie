@@ -131,7 +131,7 @@ function Home() {
 
             <h2 className="title">
               <TypeWriter
-                text="Software Engineer & Zoho/Odoo Specialist"
+                text="Software Engineer & Zoho/Odoo Developer"
                 delay={1500}
                 speed={70}
               />
