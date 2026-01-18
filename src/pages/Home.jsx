@@ -138,8 +138,7 @@ function Home() {
             </h2>
 
             <p className="bio">
-              Passionate about developing innovative software solutions and integrating
-              intelligent automation systems using modern web technologies and AI tools.
+              Developing skills in software engineering and data science .
             </p>
 
             <div className="status-indicator">
