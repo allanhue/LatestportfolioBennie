@@ -5,7 +5,7 @@ const Experience = () => {
   const experiences = [
     {
       title: "Software Engineer",
-      company: "Redian Softwares",
+      company: "Redian Software",
       period: "2025 - Present",
       details: [
         "Design and deploy custom Zoho solutions using Catalyst backend and APIs.",
