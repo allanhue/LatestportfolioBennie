@@ -69,13 +69,15 @@ function Home() {
     "Python",
     "JavaScript",
     "C",
-    "HTML & CSS",
-    "React",
+    "Next js",
+    "Typescript",
     "Zoho Deluge",
     "PostgreSQL",
     "FastAPI",
     "Supabase",
     "Scikit-learn",
+    "Render Cloud",
+
   ];
 
   const projects = [
@@ -206,7 +208,7 @@ function Home() {
 
       {/* Skills Section */}
       <section className="skills-section">
-        <h3>Core Technologies</h3>
+        <h3>Tech Stack</h3>
         <div className="skills-grid">
           {skills.map((skill, i) => (
             <motion.div
