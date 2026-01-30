@@ -16,17 +16,8 @@ const Interests = () => {
 
   const interests = [
     {
-      title: "Feature Engineering",
-      icon: FaChartLine,
-      description:
-        "Specializing in feature engineering - on art  of transforming raw data into meaningful features that improve model performance. This is my primary area am developing into  where I combine domain knowledge with statistical techniques to create powerful predictive features.",
-      focus: "Feature Selection, Transformation, Domain-Specific Features",
-      status: "Specialization Focus",
-      color: "#3b82f6"
-    },
-    {
       title: "Data Science",
-      icon: FaDatabase,
+      icon: FaBrain,
       description:
         "Experienced in data analysis, visualization and predictive modeling. Successfully completed Kaggle projects including financial fraud detection achieving 92% accuracy. Passionate about extracting meaningful insights from complex datasets.",
       focus: "Data Analysis, Predictive Modeling, Data Visualization",
@@ -36,23 +27,32 @@ const Interests = () => {
       linkText: "View Kaggle Profile"
     },
     {
-      title: "AI Engineering",
-      icon: FaBrain,
+      title: "Feature Engineering",
+      icon: FaChartLine,
       description:
-        "Passionate about building intelligent systems and leveraging artificial intelligence to solve real-world problems. Continuously learning advanced AI techniques and staying updated with the latest developments in machine learning, deep learning and neural networks.",
-      focus: "Deep Learning, Neural Networks, Model Optimization",
-      status: "Active Learning",
-      color: "#ff5555"
-    }
+        "Specializing in feature engineering - on art  of transforming raw data into meaningful features that improve model performance. This is my primary area am developing into  where I combine domain knowledge with statistical techniques to create powerful predictive features.",
+      focus: "Feature Selection, Transformation, Domain-Specific Features",
+      status: "Specialization Focus",
+      color: "#3b82f6"
+    },
+    // {
+    //   title: "AI Engineering",
+    //   icon: FaBrain,
+    //   description:
+    //     "Passionate about building intelligent systems and leveraging artificial intelligence to solve real-world problems. Continuously learning advanced AI techniques and staying updated with the latest developments in machine learning, deep learning and neural networks.",
+    //   focus: "Deep Learning, Neural Networks, Model Optimization",
+    //   status: "Active Learning",
+    //   color: "#ff5555"
+    // }
   ];
 
-  const learningGoals = [
-    "Advanced feature engineering techniques for high-dimensional data",
-    "Deep learning architectures for tabular data",
-    "Model interpretability and explainability",
-    "Production deployment of ML models",
-    "Advanced statistics and probability theory"
-  ];
+  // const learningGoals = [
+  //   "Advanced feature engineering techniques for high-dimensional data",
+  //   "Deep learning architectures for tabular data",
+  //   "Model interpretability and explainability",
+  //   "Production deployment of ML models",
+  //   "Advanced statistics and probability theory"
+  // ];
 
   return (
     <div
@@ -221,58 +221,7 @@ const Interests = () => {
       </div>
 
       {/* Learning Goals */}
-      <div
-        className="card"
-        style={{
-          marginTop: '3rem',
-          padding: isMobile ? '1rem' : '2rem'
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-          <FaFlask style={{ fontSize: '2rem', color: 'var(--accent)' }} />
-          <h2 style={{ color: 'var(--accent)', fontSize: isMobile ? '1.3rem' : '1.5rem', margin: 0 }}>
-            Current Learning Goals
-          </h2>
-        </div>
-
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: '1rem'
-          }}
-        >
-          {learningGoals.map((goal, index) => (
-            <div
-              key={index}
-              style={{
-                display: 'flex',
-                alignItems: 'flex-start',
-                gap: '0.75rem',
-                padding: '1rem',
-                backgroundColor: 'var(--background)',
-                borderRadius: '8px',
-                border: '1px solid var(--border-color)',
-                transition: 'all 0.3s ease'
-              }}
-            >
-              <div
-                style={{
-                  width: '6px',
-                  height: '6px',
-                  borderRadius: '50%',
-                  backgroundColor: 'var(--accent)',
-                  marginTop: '0.5rem',
-                  flexShrink: 0
-                }}
-              />
-              <span style={{ color: 'var(--text-primary)', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                {goal}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
+    
 
       {/* Footer Focus */}
       <div className="card" style={{ marginTop: '2rem', textAlign: 'center', padding: isMobile ? '1rem' : '1.5rem' }}>

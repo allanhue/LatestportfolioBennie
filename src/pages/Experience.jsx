@@ -8,8 +8,8 @@ const Experience = () => {
       company: "Redian Software",
       period: "2025 - Present",
       details: [
-        "Design and deploy custom Zoho solutions using Catalyst backend and APIs.",
-        "Integrate Zoho CRM/Creator with third-party APIs (Payment gateways, Google Workspace, Custom Apps) to enhance data synchronization.",
+        "Design and deploy custom  solutions using Catalyst backend and APIs.",
+        "Integrate saas applications with third-party APIs (Payment gateways, Google Workspace, Custom Apps) to enhance data synchronization.",
         "Collaborate with cross-functional teams in Agile projects, delivering applications on schedule.",
         "Optimize code quality through peer reviews and CI/CD best practices (GitHub Actions).",
         "Develop RESTful APIs for Zoho extensions, improving client reporting capabilities.",
