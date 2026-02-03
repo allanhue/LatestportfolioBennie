@@ -1,21 +1,5 @@
-# Allan's Portfolio
 
-A modern, responsive portfolio website built with React and Vite featuring a rock-themed dark aesthetic inspired by SpaceX's design language.
-
-## Features
-
-- **Modern Design**: Rock/dark theme with bright accents and smooth animations
-- **Responsive Layout**: Fully responsive design that works on all devices
-- **Dark & Light Modes**: Toggle between dark and light themes
-- **Fixed Navigation**: Smooth mobile-friendly navigation with dropdown menu
-- **Sections**:
-  - Home (Hero section with stats and skills preview)
-  - About
-  - Experience
-  - Projects
-  - Certifications
-  - Education
-  - Contact
+A modern, responsive portfolio website built with React and Vite featuring a rock-themed dark aesthetic .
 
 ## Tech Stack
 
@@ -31,98 +15,14 @@ A modern, responsive portfolio website built with React and Vite featuring a roc
 - Node.js (v14 or higher)
 - npm or yarn
 
-### Installation
-
-```bash
-# Clone the repository
-git clone <repository-url>
-
-# Navigate to project directory
-cd portflio
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-### Build
-
-```bash
-npm run build
-```
-
-## Project Structure
-
-```
-src/
-├── pages/           # Page components (Home, About, Experience, etc.)
-├── layouts/         # Layout components (Nav, Footer, Layout)
-├── css/             # Stylesheets
-│   ├── style.css    # Main styles with theme variables
-│   └── layout.css   # Layout-specific styles
-├── contexts/        # React Context (ThemeContext)
-├── App.jsx          # Main app component
-└── main.jsx         # Entry point
-```
-
-## Color Palette
-
-### Dark Theme
-- Background: `rgba(20, 28, 45, 0.92)`
-- Text Primary: `#f0f4f8`
-- Text Secondary: `#b0b8c8`
-- Accent (Red): `#ff5555`
-- Accent (Orange): `#ff8c42`
-- Card Background: `rgba(28, 40, 65, 0.85)`
-
-### Light Theme
-- Background: `#f5f7fa`
-- Text Primary: `#1a1f2e`
-- Text Secondary: `#5a6b7f`
-- Accent (Red): `#e63946`
-- Accent (Orange): `#f77f00`
-
-## Features Highlights
-
-### Responsive Navigation
-- Fixed navbar with mobile-friendly hamburger menu
-- Smooth dropdown animation on mobile devices
-- No horizontal scrolling issues
-
-### Theme Toggle
-- Easy switching between dark and light modes
-- Smooth color transitions
-- Persistent theme preference
 
 ### Performance
 - Lazy loading of page components
 - Loading spinner during component load
 - Optimized CSS with variables for fast theme switching
 
-## Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build locally
-- `npm run lint` - Run ESLint
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## Contributing
-
-Feel free to fork this project and submit pull requests for any improvements.
 
 ## License
 
 This project is open source and available under the MIT License.
-
-## Contact
-
-For inquiries, please visit the contact section on the portfolio or reach out through social media links.
