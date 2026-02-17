@@ -9,7 +9,23 @@ import {
   FaRocket,
   FaCertificate,
   FaGraduationCap,
+  FaServer,
 } from "react-icons/fa";
+import {
+  SiPython,
+  SiJavascript,
+  SiC,
+  SiTypescript,
+  SiPostgresql,
+  SiFastapi,
+  SiSupabase,
+  SiScikitlearn,
+  SiRender,
+  SiGo,
+  SiR,
+  SiGooglecloud,
+  SiDebian,
+} from "react-icons/si";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 
@@ -66,18 +82,20 @@ function Home() {
   const navigate = useNavigate();
 
   const skills = [
-    "Python",
-    "JavaScript",
-    "C",
-    "Next js",
-    "Typescript",
-    "Zoho Deluge",
-    "PostgreSQL",
-    "FastAPI",
-    "Supabase",
-    "Scikit-learn",
-    "Render Cloud",
-
+    { name: "Python", icon: SiPython },
+    { name: "JavaScript", icon: SiJavascript },
+    { name: "C", icon: SiC },
+    { name: "TypeScript", icon: SiTypescript },
+    { name: "Go", icon: SiGo },
+    { name: "R", icon: SiR },
+    { name: "PostgreSQL", icon: SiPostgresql },
+    { name: "FastAPI", icon: SiFastapi },
+    { name: "Supabase", icon: SiSupabase },
+    { name: "Scikit-learn", icon: SiScikitlearn },
+    { name: "Google Cloud", icon: SiGooglecloud },
+    { name: "Debian", icon: SiDebian },
+    { name: "Render Cloud", icon: SiRender },
+    { name: "Zoho Deluge", icon: FaServer },
   ];
 
   const projects = [
@@ -210,18 +228,22 @@ function Home() {
       <section className="skills-section">
         <h3>Tech Stack</h3>
         <div className="skills-grid">
-          {skills.map((skill, i) => (
+          {skills.map((skill, i) => {
+            const Icon = skill.icon;
+            return (
             <motion.div
-              key={skill}
+              key={skill.name}
               className="skill-badge"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.05 * i }}
               whileHover={{ scale: 1.1 }}
             >
-              {skill}
+              <Icon className="skill-icon" aria-hidden="true" />
+              <span>{skill.name}</span>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </section>
 

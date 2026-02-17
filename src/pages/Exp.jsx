@@ -27,7 +27,7 @@ const Exp = () => {
       institution: 'IBM Coursera',
       title: 'Full-Stack Software Developer Certificate',
       description:
-        'Mastered end-to-end development and deployed real-world projects like an e-commerce platform using React, Node.js, and PostgreSQL. This training equipped me to deliver client solutions professionally, including freelance work on Fiverr and Upwork where I handled full project lifecycles—from UI design to cloud deployment on render cloud infrastructure.',
+        'Mastered end-to-end development and deployed real-world projects like an e-commerce platform using React, Node.js, and PostgreSQL. This training equipped me to deliver client solutions professionally, including freelance work on Fiverr and Upwork where I handled full project lifecycles from UI design to cloud deployment on Render infrastructure.',
       skills: ['Software Engineering Principles', 'React', 'Node.js', 'PostgreSQL', 'Cloud Deployment'],
       status: 'Completed'
     },
@@ -36,7 +36,7 @@ const Exp = () => {
       institution: 'Self-Directed Learning',
       title: 'AI/ML Research & Development',
       description:
-        'Currently channeling my discipline into AI/ML research, applying tools like scikit-learn and Python to build predictive models—blending my full-stack expertise with a passion for intelligent systems.',
+        'Currently channeling my discipline into AI/ML research, applying tools like scikit-learn and Python to build predictive models while blending my full-stack expertise with a passion for intelligent systems.',
       skills: ['Python', 'Scikit-learn', 'Machine Learning', 'Data Science', 'Predictive Modeling'],
       status: 'In Progress'
     }
@@ -59,8 +59,6 @@ const Exp = () => {
         padding: isMobile ? '1rem' : '2rem'
       }}
     >
- 
-
       <p
         style={{
           color: 'var(--text-secondary)',

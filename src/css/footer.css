@@ -39,6 +39,25 @@
   line-height: 1.5;
 }
 
+.footer-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--background);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.footer-cta:hover {
+  background: #ff6666;
+  transform: translateY(-2px);
+}
+
 .footer-section h4 {
   color: var(--text-primary);
   font-size: 1.1rem;
@@ -74,7 +93,7 @@
 }
 
 .footer-links li a::before {
-  content: '→';
+  content: '->';
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -188,6 +207,10 @@
 
   .footer-social {
     justify-content: center;
+  }
+
+  .footer-cta {
+    align-self: center;
   }
 }
 

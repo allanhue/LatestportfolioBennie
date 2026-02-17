@@ -741,11 +741,14 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   background: var(--card-bg);
   color: var(--text-primary);
   padding: 0.8rem 1.5rem;
@@ -761,6 +764,11 @@ p {
   color: var(--background);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3);
+}
+
+.skill-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
 }
 
 /* Projects Preview */

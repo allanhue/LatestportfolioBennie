@@ -12,61 +12,37 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Main Footer Content */}
         <div className="footer-content">
-          {/* Brand Section */}
           <div className="footer-section">
-            {/* <h3 className="footer-brand">Allan.</h3> */}
             <p className="footer-tagline">Data Practitioner</p>
+            <a className="footer-cta" href="mailto:allanmwangi329@gmail.com">
+              Let's Work Together
+            </a>
           </div>
 
-          {/* Quick Links */}
-          {/* <div className="footer-section">
-            <h4>Quick Links</h4>
-            <ul className="footer-links">
-              <li><a href="#/about">About</a></li>
-              <li><a href="#/experience">Experience</a></li>
-              <li><a href="#/projects">Projects</a></li>
-              <li><a href="#/certifications">Certifications</a></li>
-            </ul>
-          </div> */}
-
-          {/* Contact Section */}
-          {/* <div className="footer-section">
-            <h4>Contact</h4>
-            <ul className="footer-links">
-              <li><a href="mailto:allanmwangi329@gmail.com">Email</a></li>
-              <li><a href="https://github.com/allanhue" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/allan-mwangi-626902302/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            </ul>
-          </div> */}
-
-          {/* Social Links */}
           <div className="footer-section">
             <h4>Contact</h4>
             <div className="footer-social">
-              <a href="https://github.com/allanhue" target="_blank" rel="noopener noreferrer" className="social-icon" title="GitHub">
+              <a href="https://github.com/allanhue" target="_blank" rel="noopener noreferrer" className="social-icon" title="GitHub" aria-label="GitHub">
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/allan-mwangi-626902302/" target="_blank" rel="noopener noreferrer" className="social-icon" title="LinkedIn">
+              <a href="https://www.linkedin.com/in/allan-mwangi-626902302/" target="_blank" rel="noopener noreferrer" className="social-icon" title="LinkedIn" aria-label="LinkedIn">
                 <FaLinkedin />
               </a>
-              <a href="mailto:allanmwangi329@gmail.com" className="social-icon" title="Email">
+              <a href="mailto:allanmwangi329@gmail.com" className="social-icon" title="Email" aria-label="Email">
                 <FaEnvelope />
               </a>
             </div>
           </div>
         </div>
 
-        {/* Divider */}
         <div className="footer-divider"></div>
 
-        {/* Bottom Section */}
         <div className="footer-bottom">
           <p className="footer-copyright">
             &copy; {currentYear} Allan Mwangi. All rights reserved.
           </p>
-          <button className="scroll-to-top" onClick={scrollToTop} title="Back to top">
+          <button className="scroll-to-top" onClick={scrollToTop} title="Back to top" aria-label="Back to top">
             <FaArrowUp />
           </button>
         </div>
