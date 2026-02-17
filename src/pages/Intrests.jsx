@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../css/style.css';
+import '../css/interests.css';
 import { FaBrain, FaDatabase, FaChartLine, FaFlask } from 'react-icons/fa';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 
@@ -77,7 +78,7 @@ const Interests = () => {
 
       {/* Interests Grid */}
       <div
-        className="skills-grid"
+        className="interests-grid"
         style={{
           display: 'grid',
           gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(320px, 1fr))',

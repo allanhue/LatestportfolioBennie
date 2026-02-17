@@ -1,0 +1,20 @@
+.interests-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.interests-grid .card {
+  border-left: 4px solid var(--accent);
+}
+
+.interests-grid .card:hover {
+  border-left-color: var(--accent-secondary);
+}
+
+@media (max-width: 768px) {
+  .interests-grid {
+    max-width: 100%;
+  }
+}

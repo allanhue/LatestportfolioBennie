@@ -41,7 +41,6 @@ function Cert() {
         padding: "2rem 1rem",
       }}
     >
-    <br/><br/>
       {/* Intro Section */}
       <motion.div
         className="intro-section card"

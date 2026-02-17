@@ -13,7 +13,6 @@ function About() {
         padding: "2rem 1rem",
       }}
     >
-    <br/><br/>
       {/*  About Section  */}
       <section
         className="about-section"

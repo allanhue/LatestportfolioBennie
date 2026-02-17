@@ -13,6 +13,20 @@
   --info: #3b82f6;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 [data-theme="light"] {
   --background: #f5f7fa;
   --text-primary: #1a1f2e;
@@ -29,13 +43,14 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  width: 92%;
+  width: 100%;
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 2rem 0; /* Added top padding to account for fixed navbar */
+  padding: 96px clamp(1rem, 3vw, 2rem) 0; /* Space for fixed navbar + responsive gutters */
 }
 
 .box {
@@ -53,7 +68,7 @@ body {
 
 img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 h1, h2 {
@@ -63,6 +78,7 @@ h1, h2 {
 p {
   font-family: 'Verdana', sans-serif;
   line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 .about-section {
@@ -136,7 +152,7 @@ p {
   margin: 2rem 0;
 }
 
-.skills-grid div {
+.skills-grid > div {
   background-color: var(--card-bg);
   padding: 1.5rem;
   border-radius: 8px;
@@ -352,7 +368,8 @@ p {
   }
   
   .container {
-    margin: 0rem 1rem;
+    margin: 0 auto;
+    padding: 88px 1rem 0;
   }
   
   .home_footer {
@@ -736,7 +753,7 @@ p {
   background: var(--accent);
 }
 
-.skills-grid {
+.skills-section .skills-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -745,7 +762,17 @@ p {
   margin: 0 auto;
 }
 
-.skill-badge {
+@media (max-width: 480px) {
+  .container {
+    padding: 84px 0.85rem 0;
+  }
+
+  .card {
+    padding: 1.15rem;
+  }
+}
+
+.skills-section .skill-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
@@ -757,18 +784,20 @@ p {
   font-weight: 500;
   transition: all 0.3s ease;
   cursor: pointer;
+  --skill-color: var(--accent);
 }
 
-.skill-badge:hover {
+.skills-section .skill-badge:hover {
   background: var(--accent);
   color: var(--background);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3);
 }
 
-.skill-icon {
+.skills-section .skill-icon {
   font-size: 1.1rem;
   flex-shrink: 0;
+  color: var(--skill-color);
 }
 
 /* Projects Preview */
@@ -969,11 +998,11 @@ p {
     font-size: 2.5rem;
   }
   
-  .skills-grid {
+  .skills-section .skills-grid {
     gap: 0.8rem;
   }
   
-  .skill-badge {
+  .skills-section .skill-badge {
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
   }

@@ -17,6 +17,9 @@
   gap: 1rem;
   padding: 1rem 2rem;
   margin: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-logo {
@@ -81,6 +84,10 @@
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
+  .nav-list {
+    padding: 0.85rem 1rem;
+  }
+
   .hamburger {
     display: block;
     margin-left: auto;
@@ -89,7 +96,7 @@
   .nav-links {
     display: none;
     position: fixed;
-    top: 60px;
+    top: 64px;
     left: 0;
     right: 0;
     background: #0b1629e8;
@@ -108,5 +115,13 @@
 
   .nav-links li {
     margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1rem;
   }
 }

@@ -38,8 +38,6 @@ const Experience = () => {
         padding: "2rem 1rem",
       }}
     >
-<br/><br/>
-
       <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
         {experiences.map((exp, index) => (
           <motion.div
