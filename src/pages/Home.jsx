@@ -86,16 +86,16 @@ function Home() {
     { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
     { name: "C", icon: SiC, color: "#A8B9CC" },
     { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-    { name: "Go", icon: SiGo, color: "#00ADD8" },
-    { name: "R", icon: SiR, color: "#276DC3" },
+    // { name: "Go", icon: SiGo, color: "#00ADD8" },
+    // { name: "R", icon: SiR, color: "#276DC3" },
     { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
     { name: "FastAPI", icon: SiFastapi, color: "#009688" },
-    { name: "Supabase", icon: SiSupabase, color: "#3ECF8E" },
+    // { name: "Supabase", icon: SiSupabase, color: "#3ECF8E" },
     { name: "Scikit-learn", icon: SiScikitlearn, color: "#F7931E" },
     { name: "Google Cloud", icon: SiGooglecloud, color: "#4285F4" },
     { name: "Debian", icon: SiDebian, color: "#A81D33" },
-    { name: "Render Cloud", icon: SiRender, color: "#46E3B7" },
-    { name: "Zoho Deluge", icon: FaServer, color: "#FF4F00" },
+    // { name: "Render Cloud", icon: SiRender, color: "#46E3B7" },
+    // { name: "Zoho Deluge", icon: FaServer, color: "#FF4F00" },
   ];
 
   const projects = [

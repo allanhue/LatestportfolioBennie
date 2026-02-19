@@ -5,7 +5,7 @@ const Experience = () => {
   const experiences = [
     {
       title: "Software Engineer",
-      company: "Redian Software",
+      company: "Redian Software Global",
       period: "2025 - Present",
       details: [
         "Design and deploy custom  solutions using Catalyst backend and APIs.",
@@ -17,7 +17,7 @@ const Experience = () => {
     },
     {
       title: "Freelance Full-Stack Developer",
-      company: "Fiverr & Upwork",
+      company: "Fiverr",
       period: "Aug 2024 - Present",
       details: [
         "Built 3 full-stack web apps (React/Node.js) with 95% client satisfaction, including an e-commerce solution optimized for peak loads.",
