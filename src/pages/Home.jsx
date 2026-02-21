@@ -83,10 +83,10 @@ function Home() {
 
   const skills = [
     { name: "Python", icon: SiPython, color: "#3776AB" },
-    { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-    { name: "C", icon: SiC, color: "#A8B9CC" },
+    // { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+    // { name: "C", icon: SiC, color: "#A8B9CC" },
     { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-    // { name: "Go", icon: SiGo, color: "#00ADD8" },
+    { name: "Go", icon: SiGo, color: "#00ADD8" },
     // { name: "R", icon: SiR, color: "#276DC3" },
     { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
     { name: "FastAPI", icon: SiFastapi, color: "#009688" },

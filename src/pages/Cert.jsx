@@ -7,26 +7,26 @@ function Cert() {
       title: "Programming & Languages",
       skills: [
         "Python (Pandas, NumPy, Matplotlib, Scikit-learn)",
-        "JavaScript (ES6+, React, Node.js)",
+        "JavaScript",
         "SQL (PostgreSQL, Query Optimization)",
-        "Zoho Deluge (Automation)",
+        "Go (Goroutines, Web Services)"
       ],
     },
     {
       title: "Frameworks & Platforms",
-      skills: [
-        "Frontend: React, Tailwind CSS",
-        "Backend: Node.js (Express), FastAPI",
+      skills: [ 
+        "Frontend: TypeScript, Tailwind CSS",
+        "Backend: Go, FastAPI",
         "Zoho Ecosystem: Zoho Catalyst, Suite ERP",
-        "Cloud: GCP Basics, Deployment",
+        "Cloud: GCP,",
       ],
     },
     {
       title: "Specializations & Practices",
       skills: [
         "Data Science: Cleaning, Analysis, Visualization (Matplotlib, Seaborn, Plotly, Scikit-learn)",
-        "DevOps: Git/GitHub, CI/CD Pipelines",
-        "AI/ML: Predictive Modeling, PyTorch, Scikit-learn (Learning)",
+        "DevOps: Git/GitHub, Docker, CI/CD ",
+        "AI/ML: Predictive Modeling,Scikit-learn (Learning)",
         "Soft Skills: Agile Collaboration, Problem-Solving, Communication",
       ],
     },
